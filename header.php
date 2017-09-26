@@ -38,7 +38,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-3 col-sm-3 col-xs-12">
-                        <p><i class="fa fa-phone"></i> +91 84389 81388</p>
+                        <p><i class="fa fa-phone"></i> +91 7200020777</p>
                     </div>
 
                     <div class="col-md-3 col-sm-3 col-xs-12">

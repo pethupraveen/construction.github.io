@@ -44,10 +44,10 @@
                             <h3><span class="divider"></span> Contact Us</h3>
                         </div><!-- end widget -->
                         <div class="contact_details">
-                            <p><i class="fa fa-home"></i> PO Box 17122 Nollins Street West Arizona Victoria 5034 Los Angelos </p>
-                            <span>Phone: 1.800.555.6789</span><br>
-                            <span>Email: support@builder.com </span><br>
-                            <span>Web: www.Builder.com</span>
+                            <p><i class="fa fa-home"></i> 25, Barathiyar Street, Manikandan Nager, Kundrathur, Chennai - 600 069. </p>
+                            <span>Phone: 7200020777</span><br>
+                            <span>Email: support@mrcgroup.com </span><br>
+                            <span>Web: https://pethupraveen.github.io/construction.github.io/</span>
                         </div><!-- end services -->
 
                         <hr>
@@ -65,7 +65,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h3 class="pull-left">We promise our customer to give life long support for our “ Builder Theme ”</h3>
+                        <h3 class="pull-left">We promise our customer to give life long support for our “ MRC Groups ”</h3>
                         <a href="#" class="btn btn-default btn-lg pull-right">Get a Quote</a>
                     </div>
                 </div><!-- end row -->
