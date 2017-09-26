@@ -1,129 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>MRC Group of Buliders</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/owl-carousel.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,300italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
-    <link href="css/custom.css" rel="stylesheet">
-
-    <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
-    <link rel="stylesheet" type="text/css" href="css/extralayers.css" media="screen" /> 
-    <link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
-<body>
-
-    <div id="wrapper">
-        <section id="topbar" class="clearfix">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-3 col-sm-3 col-xs-12">
-                        <p><i class="fa fa-phone"></i> +45 (0)4 79 25 37 98</p>
-                    </div>
-
-                    <div class="col-md-3 col-sm-3 col-xs-12">
-                        <p><i class="fa fa-clock-o"></i> Monday - Sunday 9.00 - 18.00</p>
-                    </div>
-
-                    <div class="col-md-3 col-sm-3 col-xs-12">
-                        <p><i class="fa fa-envelope-o"></i> yousite@yourdomain.com</p>       
-                    </div>
-
-                    <div class="col-md-2 pull-right">
-                        <form class="search-form">
-                            <div class="form-group has-feedback">
-                                <label for="search" class="sr-only">Search</label>
-                                <input type="text" class="form-control" name="search" id="search" placeholder="Search...">
-                                <span class="fa fa-search form-control-feedback"></span>
-                            </div>
-                        </form>
-                    </div>
-                </div><!-- end row -->
-            </div><!-- end container -->
-        </section><!-- end section -->
-
-        <header class="header clearfix">
-            <div class="container-fluid">
-                <nav id="jtheader" class="navbar navbar-default">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt=""></a>
-                    </div>
-                    <div id="navbar" class="navbar-collapse collapse">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li class="dropdown active">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Home <span class="caret"></span></a>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li><a href="index1.html">Home Alternative</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="about.html">About</a></li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Services <span class="caret"></span></a>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li><a href="services.html">All Services</a></li>
-                                    <li><a href="service-tab.html">Preconstruction Services</a></li>
-                                    <li><a href="service-tab.html">Construction Services</a></li>
-                                    <li><a href="service-tab.html">Building Maintenance</a></li>
-                                    <li><a href="service-tab.html">Floor Rework Services</a></li>
-                                    <li><a href="service-tab.html">Interior Design</a></li>
-                                    <li><a href="service-tab.html">OutSide Glass Flooring</a></li>
-                                    <li><a href="service-tab.html">Road Services</a></li>
-                                    <li><a href="service-tab.html">PipeLine Construction</a></li>
-                                    <li><a href="service-tab.html">Painting Works</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="projects.html">Projects</a></li>
-                            <li><a href="blog.html">Blog</a></li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Shop <span class="caret"></span></a>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li><a href="shop-single.html">Single Shop</a></li>
-                                    <li><a href="shop.html">Shop Layout</a></li>
-                                    <li><a href="checkout.html">Checkout</a></li>
-                                    <li><a href="cart.html">Cart</a></li>
-                                    <li><a href="account.html">Login Page</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="contant.html">Contact</a></li>
-                            <li class="social-icons">
-                                <ul>
-                                    <li><a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="http://www.instagram.com/" target="_blank" title="Instagram"><i class="fa fa-instagram"></i></a></li>
-                                    <li class="cartbutton"><a href="cart.html" title="Shopping Cart"><i class="fa fa-shopping-cart"></i><span class="bubble">2</span></a></li>
-                                </ul>
-                            </li>
-                          </ul>
-                    </div><!--/.nav-collapse -->
-                </nav>
-            </div><!--/.container-fluid -->
-        </header><!-- end header -->
+<?php include 'header.php'; ?>
 
         <section class="slider-wrapper">
             <article class="fullwidth-container">
@@ -152,7 +27,7 @@
                                     data-elementdelay="0.1" 
                                     data-endelementdelay="0.1" 
                                     data-endspeed="300" 
-                                    style="z-index: 5; max-width: auto; max-height: auto; white-space: nowrap;"><span>Builder</span> is a leading international<br> best Constrcution group
+                                    style="z-index: 5; max-width: auto; max-height: auto; white-space: nowrap;"><span>MRC</span> is a Best Constrcution Group
                                 </div>
                                 <div class="tp-caption slider-title-2 tp-fade tp-resizeme" 
                                     data-x="center" data-hoffset="228" 
@@ -274,7 +149,7 @@
         <section class="section-w clearfix">
             <div class="container">
                 <div class="section-title">
-                    <h3>leading international <span>Construction</span> Company</h3>
+                    <h3>leading <span>Construction</span> Company</h3>
                     <span class="divider"></span>
                     <p>We don’t work from the same office. We have hobbies outside of tech. We don’t go to conferences. We don’t have meetings. We’re guided by passion<br> and love for clean, elegant and minimal design. </p>
                 </div><!-- end section-title -->
@@ -336,7 +211,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h3 class="pull-left">Using world class materials, providing first class services and more than 75,000 employees</h3>
+                        <h3 class="pull-left">Using world class materials, providing first class services and more than 100 employees</h3>
                         <a href="#" class="btn btn-default btn-lg pull-right">Get a Quote</a>
                     </div>
                 </div><!-- end row -->
@@ -836,152 +711,20 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h3 class="pull-left">We promise our customer to give life long support for our “ Builder Theme ”</h3>
+                        <h3 class="pull-left">We promise our customer to give life long support for our “ MRC Group ”</h3>
                         <a href="#" class="btn btn-default btn-lg pull-right">Get a Quote</a>
                     </div>
                 </div><!-- end row -->
             </div><!-- end container -->
         </div><!-- end landing -->
 
-        <footer class="footer clearfix">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 col-xs-12">
-                        <div class="widget">
-                            <div class="widget-title">
-                                <h3><span class="divider"></span> About Us</h3>
-                            </div><!-- end widget title -->
-                            <div class="about-widget">
-                                <a href="#"><img src="images/logo.png" alt=""></a>
-                                <p>Our Plan is focus for 2020. Builders offer quality tiling and painting solutions for interior and commercial spaces that not only looks good but also lasts longer. Lead and manage the people, materials and processes of truction utilizing construction management professionals We offer quality tiling and painting solutions for interior and exterior.</p>
-                                <ul>
-                                    <li class="social-icons">
-                                        <ul>
-                                            <li><a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                                            <li><a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                                            <li><a href="http://www.instagram.com/" target="_blank" title="Instagram"><i class="fa fa-instagram"></i></a></li>
-                                            <li><a href="http://www.google.com/" target="_blank" title="Google"><i class="fa fa-google-plus"></i></a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div><!-- end about-widget -->
-                        </div><!-- end widget -->
-                    </div><!-- end col-lg-4 -->
-
-                    <div class="col-lg-4 col-md-6 col-xs-12">
-                        <div class="widget">
-                            <div class="widget-title">
-                                <h3><span class="divider"></span> What We Do?</h3>
-                            </div><!-- end widget title -->
-                            <div class="accordion-widget">
-
-                                <div id="accordion-first" class="clearfix">
-                                    <div class="accordion" id="accordion1">
-                                        <div class="accordion-group">
-                                            <div class="accordion-heading">
-                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne1">
-                                                    <em class="fa fa-arrow-right icon-fixed-width"></em>Construction Services
-                                                </a>
-                                            </div>
-                                            <div id="collapseOne1" class="accordion-body collapse in">
-                                                <div class="accordion-inner">
-                                                    <p><img src="demos/footer_01.png" alt="" class="alignleft"> We take pride in our work. Designing big projects is our focus for 2050. Together we bring life to your building, home ideas and your wishes. </p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="accordion-group clearfix">
-                                            <div class="accordion-heading">
-                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne2">
-                                                    <em class="fa fa-arrow-down icon-fixed-width"></em>Preconstruction Services
-                                                </a>
-                                            </div>
-                                            <div id="collapseOne2" class="accordion-body collapse">
-                                                <div class="accordion-inner">
-                                                    <p>Phasellus scelerisque est non eros commodo auctor a fringilla elit. Maecenas mattis<br> venenatis euismod. Nunc eget cursus lacus, in vehicula nibh. Suspendisse auctor orci vitae<br> tellus viverra..</p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="accordion-group clearfix">
-                                            <div class="accordion-heading">
-                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne3">
-                                                    <em class="fa fa-arrow-down icon-fixed-width"></em>Building Maintenance
-                                                </a>
-                                            </div>
-                                            <div id="collapseOne3" class="accordion-body collapse">
-                                                <div class="accordion-inner">
-                                                    <p>Phasellus scelerisque est non eros commodo auctor a fringilla elit. Maecenas mattis<br> venenatis euismod. Nunc eget cursus lacus, in vehicula nibh. Suspendisse auctor orci vitae<br> tellus viverra..</p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="accordion-group clearfix">
-                                            <div class="accordion-heading">
-                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne4">
-                                                    <em class="fa fa-arrow-down icon-fixed-width"></em>Free Customer Support
-                                                </a>
-                                            </div>
-                                            <div id="collapseOne4" class="accordion-body collapse">
-                                                <div class="accordion-inner">
-                                                    <p>Phasellus scelerisque est non eros commodo auctor a fringilla elit. Maecenas mattis<br> venenatis euismod. Nunc eget cursus lacus, in vehicula nibh. Suspendisse auctor orci vitae<br> tellus viverra..</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div><!-- end accordion -->
-                                </div><!-- end accordion first -->
-                            </div><!-- end accordion-widget -->
-                        </div><!-- end widget -->
-                    </div><!-- end col-lg-4 -->
-
-                    <div class="col-lg-4 col-md-6 col-xs-12">
-                        <div class="widget">
-                            <div class="widget-title">
-                                <h3><span class="divider"></span> Company News</h3>
-                            </div><!-- end widget title -->
-                            <div class="carousel-widget">
-                                <div id="carousel-blog" class="control-top">
-                                    <div class="blog-item">
-                                        <div class="entry">
-                                            <a href="single.html"><img src="demos/blog_01.png" alt=""></a>
-                                            <div class="magnifier">
-                                                <a href="single.html" title="">
-                                                <span class="buttons">
-                                                    <i class="fa fa-link"></i>
-                                                </span><!-- end buttons -->
-                                                </a>
-                                            </div><!-- end magnifier -->
-                                        </div>
-                                        <h3><a href="single.html" title="">Our Building Ideas Is Focused On 2025 </a></h3>
-                                        <p>We aim to eliminate the task of dividing your project between different architecture and construction company.</p>
-                                    </div><!-- end blog-item -->
-                                    <div class="blog-item">
-                                        <div class="entry">
-                                            <a href="single.html"><img src="demos/blog_02.png" alt=""></a>
-                                            <div class="magnifier">
-                                                <a href="single.html" title="">
-                                                <span class="buttons">
-                                                    <i class="fa fa-link"></i>
-                                                </span><!-- end buttons -->
-                                                </a>
-                                            </div><!-- end magnifier -->
-                                        </div>
-                                        <h3><a href="single.html" title="">Next Generation Home Building</a></h3>
-                                        <p>We aim to eliminate the task of dividing your project between different architecture and construction company.</p>
-                                    </div><!-- end blog-item -->
-                                </div><!-- end blog -->
-                            </div><!-- end carousel-widget -->
-                        </div><!-- end widget -->
-                    </div><!-- end col-lg-4 -->        
-                </div><!-- end row -->
-            </div><!-- end container -->
-        </footer><!-- end footer -->
+      <?php include 'footer.php'; ?>
 
         <section class="copyrights text-center">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 col-sm-12 col-xs-12">
-                        <h4>Builder HTML template | © 2014 Jollythemes, All rights reserved.</h4>
+                        <h4>All rights reserved | © 2017</h4>
                     </div><!-- end col -->
                 </div><!-- end row -->
             </div><!-- end container -->
@@ -1065,5 +808,4 @@
 
 </body>
 
-<!-- Mirrored from jollythemes.com/html/builder/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 25 Sep 2017 07:35:37 GMT -->
 </html>
