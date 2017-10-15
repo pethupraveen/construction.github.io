@@ -179,7 +179,7 @@ a:hover,a:focus {
 }
 
 .header.affix #jtheader {
-  padding:14px 30px;
+  padding:12px 28px;
 }
 
 #jtheader{
@@ -1888,8 +1888,8 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
 
 @media (max-width:768px){
   .container-fluid {
-    padding-left:15px;
-    padding-right:15px;
+    padding-left:14px;
+    padding-right:14px;
   }
 
   .all-clients {
