@@ -1239,7 +1239,7 @@ li.social-icons ul li.cartbutton a {
 .breadcrumb > .active,
 .breadcrumb,
 .breadcrumb a {
-  color:#999;
+  color:#000;
   font-weight: 300;
 }
 .breadcrumb > li + li:before{
