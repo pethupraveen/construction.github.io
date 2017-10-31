@@ -277,17 +277,15 @@ li.social-icons ul li a {
   float: right !important;
   width: 100%;
   margin:7px 0;
-  height: 35px;
-  background-color: #ffff;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+  height: 30px;
   border-radius: 25px;
-  border: 1px solid #484848;
+  border: 1px solid #ffff;
 }
 
 .search-form .form-group input.form-control {
   padding-right: 20px;
   border: 0 none;
-  background: transparent;
+  
   box-shadow: none;
   display:block;
 }
@@ -308,9 +306,9 @@ li.social-icons ul li a {
   height: 34px;
   line-height: 38px;
   text-align: center;
-  color: #ddd;
+  color: #000;
   left: initial;
-  font-size: 14px;
+  font-size: 20px;
 }
 
 /* ----------------------------------------------------

@@ -8,10 +8,20 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>MRC & SONS Groups Of Construction</title>
-
+    <title>MRC & SONS GROUP'S OF CONSTRUCTION</title>
+     <!-- favicon icon & apple touch icons -->
+    <link rel="shortcut icon" href="demos/icons/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="demos/icons/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="demos/icons/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="demos/icons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="demos/icons/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="demos/icons/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="demos/icons/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="demos/icons/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="demos/icons/apple-touch-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="demos/icons/apple-touch-icon-180x180.png" />
     <!-- Bootstrap Core CSS -->
-    <link rel=icon href=favicon.png sizes="16x16" type="image/png">
+    
     
     <link href="css/bootstrap.min.css" rel="stylesheet">
     
@@ -48,7 +58,7 @@
                     </div>
 
                     <div class="col-md-3 col-sm-3 col-xs-12">
-                       <p><i class="fa fa-clock-o"></i> Monday - Satday 9.00 - 07.00</p>
+                       <p><i class="fa fa-clock-o"></i> Monday - Satday 9.00 - 05.00</p>
                     </div>
 
                     <div class="col-md-3 col-sm-3 col-xs-12">
@@ -59,10 +69,15 @@
                         <form class="search-form">
                             <div class="form-group has-feedback">
                                 <label for="search" class="sr-only">Search</label>
-                                <input type="text" class="form-control" name="search" id="search" placeholder="Search...">
+                                <input type="text" class="form-control" name="search" id="autocomplete" placeholder="Search...">
                              
                                 <span class="fa fa-search form-control-feedback"></span>
                             </div>
+                            <script>
+                            $( "#autocomplete" ).autocomplete({
+                              source: [ "Home", "About", "Services", "Projects", "Contact" ]
+                            });
+                            </script>
                         </form>
                     </div>
                 </div><!-- end row -->
@@ -102,13 +117,7 @@
                             </li>
                             <li><a href="projects.html">Projects</a></li>
                             <li><a href="contant.html">Contact</a></li>
-                            <li class="social-icons">
-                                <ul>
-                                    <li><a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="http://www.instagram.com/" target="_blank" title="Instagram"><i class="fa fa-instagram"></i></a></li>
-                                   
-                                </ul>
-                            </li>
+                           
                           </ul>
                     </div><!--/.nav-collapse -->
                 </nav>
@@ -400,7 +409,7 @@
                                 <div class="magnifier">
                                     <a href="#" title="">
                                     <span class="buttons">
-                                        <i class="fa fa-link"></i>
+                                        <i class="fa fa-play"></i>
                                     </span><!-- end buttons -->
                                     </a>
                                 </div><!-- end magnifier -->
@@ -410,7 +419,7 @@
                             <p>Finial,Finishing</p>
                                 <a href="#">
                                 <span class="butto">
-                                    <i class="fa fa-picture-o"></i>
+                                    <i class="fa fa-play"></i>
                                 </span><!-- end buttons -->
                                 </a>
                             </div>
@@ -509,7 +518,7 @@
                                 <div class="magnifier">
                                     <a href="#" title="">
                                     <span class="buttons">
-                                        <i class="fa fa-play"></i>
+                                        <i class="fa fa-link"></i>
                                     </span><!-- end buttons -->
                                     </a>
                                 </div><!-- end magnifier -->
@@ -519,7 +528,7 @@
                             <p>Ongoing, Interior Design</p>
                                 <a href="#">
                                 <span class="butto">
-                                    <i class="fa fa-play"></i>
+                                    <i class="fa fa-picture-o"></i>
                                 </span><!-- end buttons -->
                                 </a>
                             </div>
@@ -531,7 +540,7 @@
                                 <div class="magnifier">
                                     <a href="#" title="">
                                     <span class="buttons">
-                                        <i class="fa fa-play"></i>
+                                        <i class="fa fa-link"></i>
                                     </span><!-- end buttons -->
                                     </a>
                                 </div><!-- end magnifier -->
@@ -541,7 +550,7 @@
                             <p>Ongoing, Interior Design</p>
                                 <a href="#">
                                 <span class="butto">
-                                    <i class="fa fa-play"></i>
+                                    <i class="fa fa-picture-o"></i>
                                 </span><!-- end buttons -->
                                 </a>
                             </div>
@@ -553,7 +562,7 @@
                                 <div class="magnifier">
                                     <a href="#" title="">
                                     <span class="buttons">
-                                        <i class="fa fa-play"></i>
+                                        <i class="fa fa-link"></i>
                                     </span><!-- end buttons -->
                                     </a>
                                 </div><!-- end magnifier -->
@@ -563,7 +572,7 @@
                             <p>Finishing, Architecture</p>
                                 <a href="#">
                                 <span class="butto">
-                                    <i class="fa fa-play"></i>
+                                    <i class="fa fa-picture-o"></i>
                                 </span><!-- end buttons -->
                                 </a>
                             </div>
@@ -665,17 +674,13 @@
                                     <div class="col-md-6 col-sm-6">
                                         <p>Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc.</p>
 
-                                        <p>Oroin condimentum fermentum nunc. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. </p>
-
-                                        <p>Proin condimentum fermentum nunc. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit tincidunt auctor a ornare odio.</p>
+                                        
                                     </div>
 
                                     <div class="col-md-6 col-sm-6">
                                         <p>Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc.</p>
 
-                                        <p>Oroin condimentum fermentum nunc. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. </p>
-
-                                        <p>Proin condimentum fermentum nunc. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit tincidunt auctor a ornare odio.</p>
+                                       
                                     </div>
                                 </div><!-- end row -->
                             </div>
@@ -804,14 +809,100 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h3 class="pull-left">We promise our customer to give life long support for our “ MRC & SONS Groups  ”</h3>
+                        <h3 class="pull-left">We promise our customer to give life long support for our “ MRC & SONS GROUP'S OF CONSTRUCTION  ”</h3>
                         <a href="#" class="btn btn-default btn-lg pull-right">Get a Quote</a>
                     </div>
                 </div><!-- end row -->
             </div><!-- end container -->
         </div><!-- end landing -->
 
-      <?html include 'footer.html'; ?>
+      <footer class="footer clearfix">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-lg-6 col-md-6 col-xs-12">
+                              <div class="widget">
+                                  <div class="widget-title">
+                                      <h3><span class="divider"></span> About Us</h3>
+                                  </div><!-- end widget title -->
+                                  <div class="about-widget">
+                                      <a href="#"><img src="images/logo.png" alt=""></a>
+                                      <p>Our Plan is focus for 2020. Builders offer quality tiling and painting solutions for interior and commercial spaces that not only looks good but also lasts longer. Lead and manage the people, materials and processes of truction utilizing construction management professionals We offer quality tiling and painting solutions for interior and exterior.</p>
+                                      <ul>
+                                         
+                                      </ul>
+                                  </div><!-- end about-widget -->
+                              </div><!-- end widget -->
+                          </div><!-- end col-lg-4 -->
+
+                          <div class="col-lg-6 col-md-6 col-xs-12">
+                              <div class="widget">
+                                  <div class="widget-title">
+                                      <h3><span class="divider"></span> What We Do?</h3>
+                                  </div><!-- end widget title -->
+                                  <div class="accordion-widget">
+
+                                      <div id="accordion-first" class="clearfix">
+                                          <div class="accordion" id="accordion1">
+                                              <div class="accordion-group">
+                                                  <div class="accordion-heading">
+                                                      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne1">
+                                                          <em class="fa fa-arrow-right icon-fixed-width"></em>Construction Services
+                                                      </a>
+                                                  </div>
+                                                  <div id="collapseOne1" class="accordion-body collapse in">
+                                                      <div class="accordion-inner">
+                                                          <p>We take pride in our work. Designing big projects is our focus for 2050. Together we bring life to your building, home ideas and your wishes. </p>
+                                                      </div>
+                                                  </div>
+                                              </div>
+
+                                              <div class="accordion-group clearfix">
+                                                  <div class="accordion-heading">
+                                                      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne2">
+                                                          <em class="fa fa-arrow-down icon-fixed-width"></em>Preconstruction Services
+                                                      </a>
+                                                  </div>
+                                                  <div id="collapseOne2" class="accordion-body collapse">
+                                                      <div class="accordion-inner">
+                                                          <p>Phasellus scelerisque est non eros commodo auctor a fringilla elit. Maecenas mattis<br> venenatis euismod. Nunc eget cursus lacus, in vehicula nibh. Suspendisse auctor orci vitae<br> tellus viverra..</p>
+                                                      </div>
+                                                  </div>
+                                              </div>
+
+                                              <div class="accordion-group clearfix">
+                                                  <div class="accordion-heading">
+                                                      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne3">
+                                                          <em class="fa fa-arrow-down icon-fixed-width"></em>Building Maintenance
+                                                      </a>
+                                                  </div>
+                                                  <div id="collapseOne3" class="accordion-body collapse">
+                                                      <div class="accordion-inner">
+                                                          <p>Phasellus scelerisque est non eros commodo auctor a fringilla elit. Maecenas mattis<br> venenatis euismod. Nunc eget cursus lacus, in vehicula nibh. Suspendisse auctor orci vitae<br> tellus viverra..</p>
+                                                      </div>
+                                                  </div>
+                                              </div>
+
+                                              <div class="accordion-group clearfix">
+                                                  <div class="accordion-heading">
+                                                      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne4">
+                                                          <em class="fa fa-arrow-down icon-fixed-width"></em>Free Customer Support
+                                                      </a>
+                                                  </div>
+                                                  <div id="collapseOne4" class="accordion-body collapse">
+                                                      <div class="accordion-inner">
+                                                          <p>Phasellus scelerisque est non eros commodo auctor a fringilla elit. Maecenas mattis<br> venenatis euismod. Nunc eget cursus lacus, in vehicula nibh. Suspendisse auctor orci vitae<br> tellus viverra..</p>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div><!-- end accordion -->
+                                      </div><!-- end accordion first -->
+                                  </div><!-- end accordion-widget -->
+                              </div><!-- end widget -->
+                          </div><!-- end col-lg-4 -->
+             
+                      </div><!-- end row -->
+                  </div><!-- end container -->
+              </footer><!-- end footer -->
 
         <section class="copyrights text-center">
             <div class="container">
