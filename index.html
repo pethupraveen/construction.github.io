@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>MRC & SONS GROUPS</title>
+    <title>Welcome to MRC & SONS GROUPS in Chennai</title>
      <!-- favicon icon & apple touch icons -->
     <link rel="shortcut icon" href="demos/icons/favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" href="demos/icons/apple-touch-icon.png" />
@@ -74,9 +74,18 @@
                                 <span class="fa fa-search form-control-feedback"></span>
                             </div>
                             <script>
-                            $( "#autocomplete" ).autocomplete({
-                              source: [ "Home", "About", "Services", "Projects", "Contact" ]
-                            });
+                            $( "input#autocomplete" ).autocomplete({
+                                source: [
+                                            { value: "Home", url: 'https://pethupraveen.github.io/construction.github.io/index.html' }, 
+                                            { value: "About", url: 'https://pethupraveen.github.io/construction.github.io/about.html' },
+                                            { value: "Services", url: 'https://pethupraveen.github.io/construction.github.io/services.html' },
+                                            { value: "Projects", url: 'https://pethupraveen.github.io/construction.github.io/projects.html' },
+                                            { value: "Contact", url: 'https://pethupraveen.github.io/construction.github.io/contant.html' }
+                                        ],
+                                       select: function (event, ui) {
+                                           window.location = ui.item.url;
+                                       }
+                               });
                             </script>
                         </form>
                     </div>
@@ -789,7 +798,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h3 class="pull-left">We promise our customer to give life long support for our “ MRC & SONS GROUP'S OF CONSTRUCTION  ”</h3>
+                        <h3 class="pull-left">We promise our customer to give life long support for our “ MRC & SONS GROUPS OF CONSTRUCTION  ”</h3>
                         <a href="#" class="btn btn-default btn-lg pull-right">Get a Quote</a>
                     </div>
                 </div><!-- end row -->

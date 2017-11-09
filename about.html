@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Welcome to MRC & SONS GROUPS in Chennai</title>
+    <title>MRC & SONS GROUPS</title>
      <!-- favicon icon & apple touch icons -->
     <link rel="shortcut icon" href="demos/icons/favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" href="demos/icons/apple-touch-icon.png" />
@@ -32,6 +32,9 @@
     <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
     <link rel="stylesheet" type="text/css" href="css/extralayers.css" media="screen" /> 
     <link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+      <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+      <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -63,9 +66,23 @@
                         <form class="search-form">
                             <div class="form-group has-feedback">
                                 <label for="search" class="sr-only">Search</label>
-                                <input type="text" class="form-control" name="search" id="search" placeholder="Search...">
+                                <input type="text" class="form-control" name="search" id="autocomplete" placeholder="Search...">
                                 <span class="fa fa-search form-control-feedback"></span>
                             </div>
+                             <script>
+                            $( "input#autocomplete" ).autocomplete({
+                                source: [
+                                            { value: "Home", url: 'https://pethupraveen.github.io/construction.github.io/index.html' }, 
+                                            { value: "About", url: 'https://pethupraveen.github.io/construction.github.io/about.html' },
+                                            { value: "Services", url: 'https://pethupraveen.github.io/construction.github.io/services.html' },
+                                            { value: "Projects", url: 'https://pethupraveen.github.io/construction.github.io/projects.html' },
+                                            { value: "Contact", url: 'https://pethupraveen.github.io/construction.github.io/contant.html' }
+                                        ],
+                                       select: function (event, ui) {
+                                           window.location = ui.item.url;
+                                       }
+                               });
+                            </script>
                         </form>
                     </div>
                 </div><!-- end row -->
@@ -428,7 +445,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h3 class="pull-left">We promise our customer to give life long support for our “ MRC & SONS GROUP'S OF CONSTRUCTION ”</h3>
+                        <h3 class="pull-left">We promise our customer to give life long support for our “ MRC & SONS GROUPS OF CONSTRUCTION ”</h3>
                         <a href="#" class="btn btn-default btn-lg pull-right">Get a Quote</a>
                     </div>
                 </div><!-- end row -->
