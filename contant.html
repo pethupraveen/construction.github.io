@@ -8,8 +8,18 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>MRC Group of Buliders</title>
-
+    <title>MRC & SONS GROUPS Of Construction</title>
+     <!-- favicon icon & apple touch icons -->
+    <link rel="shortcut icon" href="demos/icons/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="demos/icons/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="demos/icons/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="demos/icons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="demos/icons/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="demos/icons/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="demos/icons/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="demos/icons/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="demos/icons/apple-touch-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="demos/icons/apple-touch-icon-180x180.png" />
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
@@ -22,6 +32,9 @@
     <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
     <link rel="stylesheet" type="text/css" href="css/extralayers.css" media="screen" /> 
     <link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+      <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+      <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -42,20 +55,34 @@
                     </div>
 
                     <div class="col-md-3 col-sm-3 col-xs-12">
-                        <p><i class="fa fa-clock-o"></i> Monday - Sunday 9.00 - 18.00</p>
+                        <p><i class="fa fa-clock-o"></i> Monday - Satday</p>
                     </div>
 
                     <div class="col-md-3 col-sm-3 col-xs-12">
-                        <p><i class="fa fa-envelope-o"></i> yousite@yourdomain.com</p>       
+                        <p><i class="fa fa-envelope-o"></i> info@mrcsonsgroup.com</p>       
                     </div>
 
                     <div class="col-md-2 pull-right">
                         <form class="search-form">
                             <div class="form-group has-feedback">
                                 <label for="search" class="sr-only">Search</label>
-                                <input type="text" class="form-control" name="search" id="search" placeholder="Search...">
+                                <input type="text" class="form-control" name="search" id="autocomplete" placeholder="Search...">
                                 <span class="fa fa-search form-control-feedback"></span>
                             </div>
+                            <script>
+                            $( "input#autocomplete" ).autocomplete({
+                                source: [
+                                            { value: "Home", url: 'http://mrcsonsgroup.com/index.html' }, 
+                                            { value: "About", url: 'http://mrcsonsgroup.com/about.html' },
+                                            { value: "Services", url: 'http://mrcsonsgroup.com/services.html' },
+                                            { value: "Projects", url: 'http://mrcsonsgroup.com/projects.html' },
+                                            { value: "Contact", url: 'http://mrcsonsgroup.com/contant.html' }
+                                        ],
+                                       select: function (event, ui) {
+                                           window.location = ui.item.url;
+                                       }
+                               });
+                            </script>
                         </form>
                     </div>
                 </div><!-- end row -->
@@ -82,29 +109,20 @@
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Services <span class="caret"></span></a>
                                 <ul class="dropdown-menu" role="menu">
-                                    <li><a href="services.html">All Services</a></li>
+                                    <li ><a href="services.html">All Services</a></li>
                                     <li><a href="service-tab.html">Preconstruction Services</a></li>
-                                    <li><a href="service-tab.html">Construction Services</a></li>
-                                    <li><a href="service-tab.html">Building Maintenance</a></li>
+                                    <li><a href="service-tab.html">Foundation Services</a></li>
+                                    <li><a href="service-tab.html">Structure Services</a></li>
                                     <li><a href="service-tab.html">Floor Rework Services</a></li>
                                     <li><a href="service-tab.html">Interior Design</a></li>
-                                    <li><a href="service-tab.html">OutSide Glass Flooring</a></li>
-                                    <li><a href="service-tab.html">Road Services</a></li>
-                                    <li><a href="service-tab.html">PipeLine Construction</a></li>
+                                    <li><a href="service-tab.html">Doors & Windows Services</a></li>
                                     <li><a href="service-tab.html">Painting Works</a></li>
+                                    <li><a href="service-tab.html">Tiles Works</a></li>
                                 </ul>
                             </li>
                             <li><a href="projects.html">Projects</a></li>
-                            <li><a href="blog.html">Blog</a></li>
-                           
                             <li class="active"><a href="contant.html">Contact</a></li>
-                            <li class="social-icons">
-                                <ul>
-                                    <li><a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="http://www.instagram.com/" target="_blank" title="Instagram"><i class="fa fa-instagram"></i></a></li>
-                                   
-                                </ul>
-                            </li>
+                           
                           </ul>
                     </div><!--/.nav-collapse -->
                 </nav>
@@ -112,7 +130,9 @@
         </header><!-- end header -->
 
         <div class="map-wrapper">
-            <div id="map"></div>
+           
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.7601604563947!2d80.11515431420095!3d12.987186218051495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDU5JzEzLjkiTiA4MMKwMDcnMDIuNCJF!5e0!3m2!1sen!2sin!4v1511774743764"  frameborder="0" style="border:0;width: 100%; height: 450px;" allowfullscreen></iframe>
+           
         </div><!-- end map -->
 
         <section class="section-w clearfix">
@@ -123,27 +143,38 @@
                             <h3><span class="divider"></span> Contact Us</h3>
                         </div><!-- end widget -->
                         <div class="general-form">
-                            <div id="message"></div>
-                            <form id="contactform" action="http://jollythemes.com/html/builder/contact.html" name="contactform" method="post">
+                              <style>
+                                  .display-none {
+                                    display: none;
+                                  }
+                                </style>
+                            <div id="message">
+                              <div class="alert alert-danger center-block submit-fail display-none">Please fill in all form fields<br><a href="#"><i class="fa fa-long-arrow-left fa-4x"></i></a></div>
+                              <div class="alert alert-success center-block submit-success display-none">Thanks for stopping to say Hello!<br><a href="#"><i class="fa fa-long-arrow-left fa-4x"></i></a></div>
+                            </div>
+                            <form id="contact-form" action="http://formspree.io/info@mrcsonsgroup.com" name="contactform" method="post">
+                           
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                     <label>Enter your name <span>*</span></label>
-                                    <input type="text" name="name" id="name" class="form-control" placeholder="Name"> 
+                                    <input type="text" name="name" id="Name" class="form-control contact-input" placeholder="Name" required> 
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                    <label>Enter your e-mail <span>*</span></label>
-                                    <input type="text" name="email" id="email" class="form-control" placeholder="Email Address">
+                                    <label>Enter your No <span>*</span></label>
+                                    <input type="tel" name="Phone" max="10" id="Phone" class="form-control contact-input" placeholder="Phone" required> 
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                    <label>Enter your website</label>
-                                    <input type="text" name="website" id="website" class="form-control" placeholder="Website"> 
+                                    <label>Enter your Email ID <span>*</span></label>
+                                    <input type="Email" name="Email" id="Email" class="form-control contact-input" placeholder="Email" required> 
                                 </div>
+                                                               
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                     <label>Enter subject <span>*</span></label>
-                                    <input type="text" name="subject" id="subject" class="form-control" placeholder="Subject">  
+                                    <input type="text" name="Subject" id="Subject" class="form-control contact-input" placeholder="Subject" required>  
                                 </div>
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                    <label>Message goes here <span>*</span></label>
-                                    <textarea class="form-control" name="comments" id="comments" rows="6" placeholder="Message"></textarea>
+                                    <label>Message goes here</label>
+                                    <textarea class="form-control contact-input" name="Message" id="Message" rows="6" placeholder="Message"></textarea >
+                                    <input type="hidden" name="_format" value="plain" />
                                     <button type="submit" value="SEND" id="submit" class="btn btn-lg btn-primary pull-right border-radius">GET A QUOTE</button>
                                 </div>
                             </form>    
@@ -157,15 +188,16 @@
                         <div class="contact_details">
                             <p><i class="fa fa-home"></i> 25, Barathiyar Street, Manikandan Nager, Kundrathur, Chennai - 600 069. </p>
                             <span>Phone: 7200020777</span><br>
-                            <span>Email: support@mrcgroup.com </span><br>
-                            <span>Web: https://pethupraveen.github.io/construction.github.io/</span>
+                            <span>USA Branch No: +1 (682) 234 5011 </span><br>
+                            <span>Email: info@mrcsonsgroup.com </span><br>
+                            <span>Web: www.mrcsonsgroup.com</span>
                         </div><!-- end services -->
 
                         <hr>
 
                         <span class="contact_details">
-                            <strong><i class="fa fa-calendar"></i> Monday - Sunday 9.00 - 18.00</strong><br>
-                            Saturday - Sunday Working day
+                            <strong><i class="fa fa-calendar"></i> Monday - Satday 9.00 - 05.00</strong><br>
+                            
                         </span><!-- end -->
                     </div><!-- end col -->
                 </div><!-- end row -->
@@ -176,145 +208,99 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h3 class="pull-left">We promise our customer to give life long support for our “ MRC Groups ”</h3>
+                        <h3 class="pull-left">We promise our customer to give life long support for our “ MRC & SONS GROUPS OF CONSTRUCTION ”</h3>
                         <a href="#" class="btn btn-default btn-lg pull-right">Get a Quote</a>
                     </div>
                 </div><!-- end row -->
             </div><!-- end container -->
         </div><!-- end landing -->
-  <footer class="footer clearfix">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 col-xs-12">
-                        <div class="widget">
-                            <div class="widget-title">
-                                <h3><span class="divider"></span> About Us</h3>
-                            </div><!-- end widget title -->
-                            <div class="about-widget">
-                                <a href="#"><img src="images/logo.png" alt=""></a>
-                                <p>Our Plan is focus for 2020. Builders offer quality tiling and painting solutions for interior and commercial spaces that not only looks good but also lasts longer. Lead and manage the people, materials and processes of truction utilizing construction management professionals We offer quality tiling and painting solutions for interior and exterior.</p>
-                                <ul>
-                                    <li class="social-icons">
-                                        <ul>
-                                            <li><a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                                            
-                                            <li><a href="http://www.instagram.com/" target="_blank" title="Instagram"><i class="fa fa-instagram"></i></a></li>
-                                            
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div><!-- end about-widget -->
-                        </div><!-- end widget -->
-                    </div><!-- end col-lg-4 -->
+ <footer class="footer clearfix">
+           <div class="container">
+               <div class="row">
+                   <div class="col-lg-6 col-md-6 col-xs-12">
+                       <div class="widget">
+                           <div class="widget-title">
+                               <h3><span class="divider"></span> About Us</h3>
+                           </div><!-- end widget title -->
+                           <div class="about-widget">
+                                     <a href="about.html"><img src="images/logo.png" alt=""></a>
+                                      <p>Family-owned and operated since 2014, MRC & SONS GROUPS has gone through an evolution to become Construction company it is today. Two brothers founded the company after years of working with their father. <a href="about.html">ReadMore.</a></p>
+                               <ul>
+                                  
+                               </ul>
+                           </div><!-- end about-widget -->
+                       </div><!-- end widget -->
+                   </div><!-- end col-lg-4 -->
 
-                    <div class="col-lg-4 col-md-6 col-xs-12">
-                        <div class="widget">
-                            <div class="widget-title">
-                                <h3><span class="divider"></span> What We Do?</h3>
-                            </div><!-- end widget title -->
-                            <div class="accordion-widget">
+                   <div class="col-lg-6 col-md-6 col-xs-12">
+                       <div class="widget">
+                           <div class="widget-title">
+                               <h3><span class="divider"></span> What We Do?</h3>
+                           </div><!-- end widget title -->
+                           <div class="accordion-widget">
 
-                                <div id="accordion-first" class="clearfix">
-                                    <div class="accordion" id="accordion1">
-                                        <div class="accordion-group">
-                                            <div class="accordion-heading">
-                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne1">
-                                                    <em class="fa fa-arrow-right icon-fixed-width"></em>Construction Services
-                                                </a>
-                                            </div>
-                                            <div id="collapseOne1" class="accordion-body collapse in">
-                                                <div class="accordion-inner">
-                                                    <p><img src="demos/footer_01.png" alt="" class="alignleft"> We take pride in our work. Designing big projects is our focus for 2050. Together we bring life to your building, home ideas and your wishes. </p>
-                                                </div>
-                                            </div>
-                                        </div>
+                               <div id="accordion-first" class="clearfix">
+                                   <div class="accordion" id="accordion1">
+                                       <div class="accordion-group">
+                                           <div class="accordion-heading">
+                                               <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne1">
+                                                   <em class="fa fa-arrow-right icon-fixed-width"></em>Construction Services
+                                               </a>
+                                           </div>
+                                           <div id="collapseOne1" class="accordion-body collapse in">
+                                               <div class="accordion-inner">
+                                                   <p>We take pride in our work. Designing big projects is our focus for 2050. Together we bring life to your building, home ideas and your wishes. </p>
+                                               </div>
+                                           </div>
+                                       </div>
 
-                                        <div class="accordion-group clearfix">
-                                            <div class="accordion-heading">
-                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne2">
-                                                    <em class="fa fa-arrow-down icon-fixed-width"></em>Preconstruction Services
-                                                </a>
-                                            </div>
-                                            <div id="collapseOne2" class="accordion-body collapse">
-                                                <div class="accordion-inner">
-                                                    <p>Phasellus scelerisque est non eros commodo auctor a fringilla elit. Maecenas mattis<br> venenatis euismod. Nunc eget cursus lacus, in vehicula nibh. Suspendisse auctor orci vitae<br> tellus viverra..</p>
-                                                </div>
-                                            </div>
-                                        </div>
+                                       <div class="accordion-group clearfix">
+                                           <div class="accordion-heading">
+                                               <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne2">
+                                                   <em class="fa fa-arrow-down icon-fixed-width"></em>Preconstruction Services
+                                               </a>
+                                           </div>
+                                           <div id="collapseOne2" class="accordion-body collapse">
+                                               <div class="accordion-inner">
+                                                   <p>Phasellus scelerisque est non eros commodo auctor a fringilla elit. Maecenas mattis<br> venenatis euismod. Nunc eget cursus lacus, in vehicula nibh. Suspendisse auctor orci vitae<br> tellus viverra..</p>
+                                               </div>
+                                           </div>
+                                       </div>
 
-                                        <div class="accordion-group clearfix">
-                                            <div class="accordion-heading">
-                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne3">
-                                                    <em class="fa fa-arrow-down icon-fixed-width"></em>Building Maintenance
-                                                </a>
-                                            </div>
-                                            <div id="collapseOne3" class="accordion-body collapse">
-                                                <div class="accordion-inner">
-                                                    <p>Phasellus scelerisque est non eros commodo auctor a fringilla elit. Maecenas mattis<br> venenatis euismod. Nunc eget cursus lacus, in vehicula nibh. Suspendisse auctor orci vitae<br> tellus viverra..</p>
-                                                </div>
-                                            </div>
-                                        </div>
+                                       <div class="accordion-group clearfix">
+                                           <div class="accordion-heading">
+                                               <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne3">
+                                                   <em class="fa fa-arrow-down icon-fixed-width"></em>Building Maintenance
+                                               </a>
+                                           </div>
+                                           <div id="collapseOne3" class="accordion-body collapse">
+                                               <div class="accordion-inner">
+                                                   <p>Phasellus scelerisque est non eros commodo auctor a fringilla elit. Maecenas mattis<br> venenatis euismod. Nunc eget cursus lacus, in vehicula nibh. Suspendisse auctor orci vitae<br> tellus viverra..</p>
+                                               </div>
+                                           </div>
+                                       </div>
 
-                                        <div class="accordion-group clearfix">
-                                            <div class="accordion-heading">
-                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne4">
-                                                    <em class="fa fa-arrow-down icon-fixed-width"></em>Free Customer Support
-                                                </a>
-                                            </div>
-                                            <div id="collapseOne4" class="accordion-body collapse">
-                                                <div class="accordion-inner">
-                                                    <p>Phasellus scelerisque est non eros commodo auctor a fringilla elit. Maecenas mattis<br> venenatis euismod. Nunc eget cursus lacus, in vehicula nibh. Suspendisse auctor orci vitae<br> tellus viverra..</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div><!-- end accordion -->
-                                </div><!-- end accordion first -->
-                            </div><!-- end accordion-widget -->
-                        </div><!-- end widget -->
-                    </div><!-- end col-lg-4 -->
-
-                    <div class="col-lg-4 col-md-6 col-xs-12">
-                        <div class="widget">
-                            <div class="widget-title">
-                                <h3><span class="divider"></span> Company News</h3>
-                            </div><!-- end widget title -->
-                            <div class="carousel-widget">
-                                <div id="carousel-blog" class="control-top">
-                                    <div class="blog-item">
-                                        <div class="entry">
-                                            <a href="single.html"><img src="demos/blog_01.png" alt=""></a>
-                                            <div class="magnifier">
-                                                <a href="single.html" title="">
-                                                <span class="buttons">
-                                                    <i class="fa fa-link"></i>
-                                                </span><!-- end buttons -->
-                                                </a>
-                                            </div><!-- end magnifier -->
-                                        </div>
-                                        <h3><a href="single.html" title="">Our Building Ideas Is Focused On 2025 </a></h3>
-                                        <p>We aim to eliminate the task of dividing your project between different architecture and construction company.</p>
-                                    </div><!-- end blog-item -->
-                                    <div class="blog-item">
-                                        <div class="entry">
-                                            <a href="single.html"><img src="demos/blog_02.png" alt=""></a>
-                                            <div class="magnifier">
-                                                <a href="single.html" title="">
-                                                <span class="buttons">
-                                                    <i class="fa fa-link"></i>
-                                                </span><!-- end buttons -->
-                                                </a>
-                                            </div><!-- end magnifier -->
-                                        </div>
-                                        <h3><a href="single.html" title="">Next Generation Home Building</a></h3>
-                                        <p>We aim to eliminate the task of dividing your project between different architecture and construction company.</p>
-                                    </div><!-- end blog-item -->
-                                </div><!-- end blog -->
-                            </div><!-- end carousel-widget -->
-                        </div><!-- end widget -->
-                    </div><!-- end col-lg-4 -->        
-                </div><!-- end row -->
-            </div><!-- end container -->
-        </footer><!-- end footer -->
+                                       <div class="accordion-group clearfix">
+                                           <div class="accordion-heading">
+                                               <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne4">
+                                                   <em class="fa fa-arrow-down icon-fixed-width"></em>Free Customer Support
+                                               </a>
+                                           </div>
+                                           <div id="collapseOne4" class="accordion-body collapse">
+                                               <div class="accordion-inner">
+                                                   <p>Phasellus scelerisque est non eros commodo auctor a fringilla elit. Maecenas mattis<br> venenatis euismod. Nunc eget cursus lacus, in vehicula nibh. Suspendisse auctor orci vitae<br> tellus viverra..</p>
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div><!-- end accordion -->
+                               </div><!-- end accordion first -->
+                           </div><!-- end accordion-widget -->
+                       </div><!-- end widget -->
+                   </div><!-- end col-lg-4 -->
+      
+               </div><!-- end row -->
+           </div><!-- end container -->
+       </footer><!-- end footer -->
 
         <section class="copyrights text-center">
             <div class="container">
@@ -339,54 +325,36 @@
     <script src="js/owl-scripts.js"></script>
     <script src="js/custom.js"></script>
 
-    <!-- Map Scripts-->
-    <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
-    <!-- Google Map -->
-    <script type="text/javascript">
-        (function($) {
-          "use strict";
-            var locations = [
-            ['<div class="infobox"><h3 class="title"><a href="about-1.html">OUR USA OFFICE</a></h3><span>NEW YORK CITY 2045 / 65</span><br>+90 555 666 77 88</p></div></div></div>', -37.801578, 145.060508, 2]
-            ];
-        
-            var map = new google.maps.Map(document.getElementById('map'), {
-              zoom: 15,
-                scrollwheel: false,
-                navigationControl: true,
-                mapTypeControl: false,
-                scaleControl: false,
-                draggable: false,
-                styles: [ { "stylers": [ { "hue": "#000" },  {saturation: -200},
-                    {gamma: 0.50} ] } ],
-                center: new google.maps.LatLng(-37.801578, 145.060508),
-              mapTypeId: google.maps.MapTypeId.ROADMAP
-            });
-        
-            var infowindow = new google.maps.InfoWindow();
-        
-            var marker, i;
-        
-            for (i = 0; i < locations.length; i++) {  
-          
-                marker = new google.maps.Marker({ 
-                position: new google.maps.LatLng(locations[i][1], locations[i][2]), 
-                map: map ,
-                icon: 'images/marker.png'
-                });
-        
-        
-              google.maps.event.addListener(marker, 'click', (function(marker, i) {
-                return function() {
-                  infowindow.setContent(locations[i][0]);
-                  infowindow.open(map, marker);
-                }
-              })(marker, i));
-            }
-        })(jQuery);
-    </script>
-    <script src="../../../www.jollythemes.com/html/builder/js/jigowatt.html"></script>
+ <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>  
+   <script>
+     $(document).ready(function() {
+ 
+  var $contactForm = $('#contact-form');
+  $contactForm.submit(function(e) {
+    e.preventDefault();
+    $.ajax({
+      url: '//formspree.io/info@mrcsonsgroup.com',
+      method: 'POST',
+      data: $(this).serialize(),
+      dataType: 'json',
+      
+      success: function(data) {
+         $('.submit-success').fadeToggle(400);
+         $('.submit-fail, .submit-success').click(function() {
+            $(this).hide();
+          });
+      },
+      error: function(err) {
+        $('.submit-fail').fadeToggle(400);
+        $('.submit-fail, .submit-success').click(function() {
+            $(this).hide();
+          });
+      }
+    });
+  });
+});
+
+   </script>
 
 </body>
-
-<!-- Mirrored from jollythemes.com/html/builder/contant.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 25 Sep 2017 07:33:46 GMT -->
 </html>

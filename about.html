@@ -8,8 +8,18 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>MRC Group of Buliders</title>
-
+    <title>MRC & SONS GROUP</title>
+     <!-- favicon icon & apple touch icons -->
+    <link rel="shortcut icon" href="demos/icons/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="demos/icons/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="demos/icons/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="demos/icons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="demos/icons/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="demos/icons/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="demos/icons/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="demos/icons/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="demos/icons/apple-touch-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="demos/icons/apple-touch-icon-180x180.png" />
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
@@ -22,6 +32,9 @@
     <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
     <link rel="stylesheet" type="text/css" href="css/extralayers.css" media="screen" /> 
     <link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+      <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+      <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -42,20 +55,34 @@
                     </div>
 
                     <div class="col-md-3 col-sm-3 col-xs-12">
-                        <p><i class="fa fa-clock-o"></i> Monday - Sunday 9.00 - 18.00</p>
+                        <p><i class="fa fa-clock-o"></i> Monday - Satday</p>
                     </div>
 
                     <div class="col-md-3 col-sm-3 col-xs-12">
-                        <p><i class="fa fa-envelope-o"></i> yousite@yourdomain.com</p>       
+                        <p><i class="fa fa-envelope-o"></i> info@mrcsonsgroup.com</p>       
                     </div>
 
                     <div class="col-md-2 pull-right">
                         <form class="search-form">
                             <div class="form-group has-feedback">
                                 <label for="search" class="sr-only">Search</label>
-                                <input type="text" class="form-control" name="search" id="search" placeholder="Search...">
+                                <input type="text" class="form-control" name="search" id="autocomplete" placeholder="Search...">
                                 <span class="fa fa-search form-control-feedback"></span>
                             </div>
+                             <script>
+                            $( "input#autocomplete" ).autocomplete({
+                                source: [
+                                            { value: "Home", url: 'http://mrcsonsgroup.com/index.html' }, 
+                                            { value: "About", url: 'http://mrcsonsgroup.com/about.html' },
+                                            { value: "Services", url: 'http://mrcsonsgroup.com/services.html' },
+                                            { value: "Projects", url: 'http://mrcsonsgroup.com/projects.html' },
+                                            { value: "Contact", url: 'http://mrcsonsgroup.com/contant.html' }
+                                        ],
+                                       select: function (event, ui) {
+                                           window.location = ui.item.url;
+                                       }
+                               });
+                            </script>
                         </form>
                     </div>
                 </div><!-- end row -->
@@ -82,29 +109,21 @@
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Services <span class="caret"></span></a>
                                 <ul class="dropdown-menu" role="menu">
-                                    <li><a href="services.html">All Services</a></li>
-                                    <li><a href="service-tab.html">Preconstruction Services</a></li>
-                                    <li><a href="service-tab.html">Construction Services</a></li>
-                                    <li><a href="service-tab.html">Building Maintenance</a></li>
-                                    <li><a href="service-tab.html">Floor Rework Services</a></li>
-                                    <li><a href="service-tab.html">Interior Design</a></li>
-                                    <li><a href="service-tab.html">OutSide Glass Flooring</a></li>
-                                    <li><a href="service-tab.html">Road Services</a></li>
-                                    <li><a href="service-tab.html">PipeLine Construction</a></li>
-                                    <li><a href="service-tab.html">Painting Works</a></li>
+                                     <li><a href="services.html">All Services</a></li>
+                                    <li><a href="service-preconstruction.html">Preconstruction Services</a></li>
+                                    <li><a href="service-foundation.html">Foundation Services</a></li>
+                                    <li><a href="service-structure.html">Structure Services</a></li>
+                                    <li><a href="service-floor_rework.html">Floor Rework Services</a></li>
+                                    <li><a href="service-interior_design.html">Interior Design</a></li>
+                                    <li><a href="service-doors_windows.html">Doors & Windows Services</a></li>
+                                    <li><a href="service-painting.html">Painting Works</a></li>
+                                    <li><a href="service-tiles.html">Tiles Works</a></li>
                                 </ul>
                             </li>
                             <li><a href="projects.html">Projects</a></li>
-                            <li><a href="blog.html">Blog</a></li>
-                           
+                                                
                             <li><a href="contant.html">Contact</a></li>
-                            <li class="social-icons">
-                                <ul>
-                                    <li><a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="http://www.instagram.com/" target="_blank" title="Instagram"><i class="fa fa-instagram"></i></a></li>
-                                   
-                                </ul>
-                            </li>
+                            
                           </ul>
                     </div><!--/.nav-collapse -->
                 </nav>
@@ -130,10 +149,10 @@
                     <div class="col-md-12 col-sm-12">
                         <div id="about-slider">
                             <div class="slide">
-                                <img src="demos/about_01.png" alt="" class="img-responsive">
+                                <img src="demos/about_02.png" alt="" class="img-responsive">
                             </div><!-- end slide -->
                             <div class="slide">
-                                <img src="demos/about_02.png" alt="" class="img-responsive">
+                                <img src="demos/about_01.png" alt="" class="img-responsive">
                             </div><!-- end slide -->
                             <div class="slide">
                                 <img src="demos/about_03.png" alt="" class="img-responsive">
@@ -151,8 +170,8 @@
                                 <h3><span class="divider"></span> About MRC & SONS GROUPS</h3>
                             </div><!-- end widget title -->
                             <div class="about-widget">
-                            <p><img src="demos/logo.png" alt="" class="alignleft img-responvie"> Our Plan is focus for 2020. Builders offer quality tiling and painting solutions for interior and commercial spaces that not only looks good but also lasts longer. We don’t work from the same office. We have hobbies outside of tech. We don’t go to conferences. We don’t have meetings. We’re guided by Lead and manage the people, materials and processes of truction utilizing construction management professionals We offer quality tiling and painting solutions for interior and exterior. </p>
-                            <p>Builders offer quality tiling and painting solutions for interior and commercial spaces that not only looks good but also lasts longer. We don’t work from the same office. We don’t work from the same office.</p>
+                            <h4><img src="demos/logo.png" alt="" class="alignleft img-responvie"> Two brothers founded the company after years of working with their father. </h4>
+                            <p>The partnership started off specializing in Interior Design and Architecture Design. Joy spread through their customers after each project was completed. Excited with their success, they started building homes.</p>
                             </div><!-- end about-widget -->
                         </div><!-- end widget -->
                     </div><!-- end col-lg-4 -->
@@ -174,7 +193,7 @@
                                             </div>
                                             <div id="collapseOne1" class="accordion-body collapse in">
                                                 <div class="accordion-inner">
-                                                    <p><img src="demos/footer_01.png" alt="" class="alignleft"> We take pride in our work. Designing big projects is our focus for 2050. Together we bring life to your building, home ideas and your wishes. </p>
+                                                    <p>We take pride in our work. Designing big projects is our focus for 2050. Together we bring life to your building, home ideas and your wishes. </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -230,7 +249,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h3 class="pull-left">Using world class materials, providing first class services and more than 75,000 employees</h3>
+                        <h3 class="pull-left">Using world class materials, providing first class services and more than 100 employees</h3>
                         <a href="#" class="btn btn-default btn-lg pull-right">Get a Quote</a>
                     </div>
                 </div><!-- end row -->
@@ -246,120 +265,53 @@
                 </div><!-- end section-title -->
                 
                 <div class="row section-wrapper team-list clearfix">
-                    <div class="col-md-4 col-sm-6">
+                    <div class="col-md-6 col-sm-6">
                         <div class="team-box">
                             <img src="demos/team_01.png" alt="" class="img-responsive">
-                            <h3>Mark Rafrac </h3>
-                            <h4>Senior Civil Engineer</h4>
+                            <h3>Sathish Chandran</h3>
+                            <h4>Director</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare odio et massa dignissim, at accumsan metus viverra.</p>
                             <ul>
-                            <li class="social-icons">
+                            <!--<li class="social-icons">
                                 <ul>
                                     <li><a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                                   
                                     <li><a href="http://www.instagram.com/" target="_blank" title="Instagram"><i class="fa fa-instagram"></i></a></li>
                                 </ul>
-                            </li>
+                            </li>-->
                             </ul>
                         </div><!-- end team box -->
                     </div><!-- end col -->
-                    <div class="col-md-4 col-sm-6">
+                    <div class="col-md-6 col-sm-6">
                         <div class="team-box">
                             <img src="demos/team_02.png" alt="" class="img-responsive">
-                            <h3>George Stook</h3>
-                            <h4>Cheif Elerician and Manager</h4>
+                            <h3>Dinesh K Chandran</h3>
+                            <h4>Chairman</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare odio et massa dignissim, at accumsan metus viverra.</p>
                             <ul>
-                            <li class="social-icons">
+                            <!--<li class="social-icons">
                                 <ul>
                                     <li><a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                                   
                                     <li><a href="http://www.instagram.com/" target="_blank" title="Instagram"><i class="fa fa-instagram"></i></a></li>
                                 </ul>
-                            </li>
+                            </li>-->
                             </ul>
                         </div><!-- end team box -->
                     </div><!-- end col -->
-                    <div class="col-md-4 col-sm-6">
-                        <div class="team-box">
-                            <img src="demos/team_03.png" alt="" class="img-responsive">
-                            <h3>Adam Rafrac </h3>
-                            <h4>Supervisior for Builder Groups</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare odio et massa dignissim, at accumsan metus viverra.</p>
-                            <ul>
-                            <li class="social-icons">
-                                <ul>
-                                    <li><a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="http://www.instagram.com/" target="_blank" title="Instagram"><i class="fa fa-instagram"></i></a></li>
-                                </ul>
-                            </li>
-                            </ul>
-                        </div><!-- end team box -->
-                    </div><!-- end col -->
-
-                    <div class="col-md-4 col-sm-6">
-                        <div class="team-box">
-                            <img src="demos/team_04.png" alt="" class="img-responsive">
-                            <h3>Mark Rafrac </h3>
-                            <h4>Senior Civil Engineer</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare odio et massa dignissim, at accumsan metus viverra.</p>
-                            <ul>
-                            <li class="social-icons">
-                                <ul>
-                                    <li><a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="http://www.instagram.com/" target="_blank" title="Instagram"><i class="fa fa-instagram"></i></a></li>
-                                </ul>
-                            </li>
-                            </ul>
-                        </div><!-- end team box -->
-                    </div><!-- end col -->
-                    <div class="col-md-4 col-sm-6">
-                        <div class="team-box">
-                            <img src="demos/team_05.png" alt="" class="img-responsive">
-                            <h3>George Stook</h3>
-                            <h4>Cheif Elerician and Manager</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare odio et massa dignissim, at accumsan metus viverra.</p>
-                            <ul>
-                            <li class="social-icons">
-                                <ul>
-                                    <li><a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="http://www.instagram.com/" target="_blank" title="Instagram"><i class="fa fa-instagram"></i></a></li>
-                                </ul>
-                            </li>
-                            </ul>
-                        </div><!-- end team box -->
-                    </div><!-- end col -->
-                    <div class="col-md-4 col-sm-6">
-                        <div class="team-box">
-                            <img src="demos/team_06.png" alt="" class="img-responsive">
-                            <h3>Adam Rafrac </h3>
-                            <h4>Supervisior for Builder Groups</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare odio et massa dignissim, at accumsan metus viverra.</p>
-                            <ul>
-                            <li class="social-icons">
-                                <ul>
-                                    <li><a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="http://www.instagram.com/" target="_blank" title="Instagram"><i class="fa fa-instagram"></i></a></li>
-                                </ul>
-                            </li>
-                            </ul>
-                        </div><!-- end team box -->
-                    </div><!-- end col -->
+   
+                    
                 </div><!-- end row -->
             </div><!-- end container -->
         </section><!-- end section -->
-
+<!-- 
         <section class="section-w clearfix">
             <div class="container">
                 <div class="section-title">
                     <h3>Clients & Partners</h3>
                     <span class="divider"></span>
                     <p> We offer quality tiling and painting solutions for interior and exterior.</p>
-                </div><!-- end section-title -->
+                </div><!-- end section-title 
                 
                 <div class="row section-wrapper clearfix">
                     <div class="col-md-6 col-sm-6">
@@ -373,7 +325,7 @@
                                     <i class="fa fa-star"></i>
                                     <i class="fa fa-star"></i>
                                     <i class="fa fa-star"></i>
-                                 </div><!-- end rating -->
+                                 </div><!-- end rating 
                                  <img src="demos/testi_01.png" class="img-responsive img-circle" alt="">
                                  </div>
 
@@ -391,7 +343,7 @@
                                     <i class="fa fa-star"></i>
                                     <i class="fa fa-star"></i>
                                     <i class="fa fa-star"></i>
-                                 </div><!-- end rating -->
+                                 </div><!-- end rating 
                                  <img src="demos/testi_01.png" class="img-responsive img-circle" alt="">
                                  </div>
 
@@ -409,7 +361,7 @@
                                     <i class="fa fa-star"></i>
                                     <i class="fa fa-star"></i>
                                     <i class="fa fa-star"></i>
-                                 </div><!-- end rating -->
+                                 </div><!-- end rating
                                  <img src="demos/testi_01.png" class="img-responsive img-circle" alt="">
                                  </div>
 
@@ -419,7 +371,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div><!-- end col -->
+                    </div><!-- end col 
 
                     <div class="col-md-6 col-sm-6">
                         <div class="row all-clients">
@@ -431,8 +383,8 @@
                                     <img src="demos/client_02_back.png" alt="" class="image img-responsive">
                                     </figcaption>   
                                  </figure>
-                                </div><!-- end client -->
-                            </div><!-- end col -->
+                                </div><!-- end client 
+                            </div><!-- end col 
                             <div class="col-md-6 col-sm-6 last">
                                 <div class="client">
                                 <figure class="effect-milo">
@@ -441,8 +393,8 @@
                                     <img src="demos/client_03_back.png" alt="" class="image img-responsive">
                                     </figcaption>   
                                  </figure>
-                                </div><!-- end client -->
-                            </div><!-- end col -->
+                                </div><!-- end client 
+                            </div><!-- end col 
                             <div class="col-md-6 col-sm-6 first">
                                 <div class="client">
                                 <figure class="effect-milo">
@@ -451,8 +403,8 @@
                                     <img src="demos/client_04_back.png" alt="" class="image img-responsive">
                                     </figcaption>   
                                  </figure>
-                                </div><!-- end client -->
-                            </div><!-- end col -->
+                                </div><!-- end client 
+                            </div><!-- end col 
                             <div class="col-md-6 col-sm-6 last">
                                 <div class="client">
                                 <figure class="effect-milo">
@@ -461,8 +413,8 @@
                                     <img src="demos/client_05_back.png" alt="" class="image img-responsive">
                                     </figcaption>   
                                  </figure>
-                                </div><!-- end client -->
-                            </div><!-- end col -->
+                                </div><!-- end client 
+                            </div><!-- end col 
                             <div class="col-md-6 col-sm-6 first">
                                 <div class="client">
                                 <figure class="effect-milo">
@@ -472,7 +424,7 @@
                                     </figcaption>   
                                  </figure>
                                 </div><!-- end client -->
-                            </div><!-- end col -->
+                            </div><!-- end col 
                             <div class="col-md-6 col-sm-6 last">
                                 <div class="client">
                                 <figure class="effect-milo">
@@ -481,19 +433,19 @@
                                     <img src="demos/client_01_back.png" alt="" class="image img-responsive">
                                     </figcaption>   
                                  </figure>
-                                </div><!-- end client -->
-                            </div><!-- end col -->
-                        </div><!-- end row -->
-                    </div><!-- end col -->
-                </div><!-- end row -->
-            </div><!-- end container -->
-        </section><!-- end section -->
+                                </div> end client 
+                            </div><!-- end col 
+                        </div><!-- end row 
+                    </div><!-- end col 
+                </div><!-- end row
+            </div><!-- end container 
+        </section>end section -->
 
         <div class="landing-message colorful">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h3 class="pull-left">We promise our customer to give life long support for our “ Builder Theme ”</h3>
+                        <h3 class="pull-left">We promise our customer to give life long support for our “ MRC & SONS GROUPS OF CONSTRUCTION ”</h3>
                         <a href="#" class="btn btn-default btn-lg pull-right">Get a Quote</a>
                     </div>
                 </div><!-- end row -->
@@ -502,29 +454,22 @@
   <footer class="footer clearfix">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 col-md-6 col-xs-12">
+                    <div class="col-lg-6 col-md-6 col-xs-12">
                         <div class="widget">
                             <div class="widget-title">
                                 <h3><span class="divider"></span> About Us</h3>
                             </div><!-- end widget title -->
                             <div class="about-widget">
-                                <a href="#"><img src="images/logo.png" alt=""></a>
-                                <p>Our Plan is focus for 2020. Builders offer quality tiling and painting solutions for interior and commercial spaces that not only looks good but also lasts longer. Lead and manage the people, materials and processes of truction utilizing construction management professionals We offer quality tiling and painting solutions for interior and exterior.</p>
+                                <a href="about.html"><img src="images/logo.png" alt=""></a>
+                                <p>Family-owned and operated since 2014, MRC & SONS GROUPS has gone through an evolution to become Construction company it is today. Two brothers founded the company after years of working with their father. <a href="about.html">ReadMore.</a></p>
                                 <ul>
-                                    <li class="social-icons">
-                                        <ul>
-                                            <li><a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                                            
-                                            <li><a href="http://www.instagram.com/" target="_blank" title="Instagram"><i class="fa fa-instagram"></i></a></li>
-                                            
-                                        </ul>
-                                    </li>
+                                   
                                 </ul>
                             </div><!-- end about-widget -->
                         </div><!-- end widget -->
                     </div><!-- end col-lg-4 -->
 
-                    <div class="col-lg-4 col-md-6 col-xs-12">
+                    <div class="col-lg-6 col-md-6 col-xs-12">
                         <div class="widget">
                             <div class="widget-title">
                                 <h3><span class="divider"></span> What We Do?</h3>
@@ -541,7 +486,7 @@
                                             </div>
                                             <div id="collapseOne1" class="accordion-body collapse in">
                                                 <div class="accordion-inner">
-                                                    <p><img src="demos/footer_01.png" alt="" class="alignleft"> We take pride in our work. Designing big projects is our focus for 2050. Together we bring life to your building, home ideas and your wishes. </p>
+                                                    <p>We take pride in our work. Designing big projects is our focus for 2050. Together we bring life to your building, home ideas and your wishes. </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -589,46 +534,7 @@
                             </div><!-- end accordion-widget -->
                         </div><!-- end widget -->
                     </div><!-- end col-lg-4 -->
-
-                    <div class="col-lg-4 col-md-6 col-xs-12">
-                        <div class="widget">
-                            <div class="widget-title">
-                                <h3><span class="divider"></span> Company News</h3>
-                            </div><!-- end widget title -->
-                            <div class="carousel-widget">
-                                <div id="carousel-blog" class="control-top">
-                                    <div class="blog-item">
-                                        <div class="entry">
-                                            <a href="single.html"><img src="demos/blog_01.png" alt=""></a>
-                                            <div class="magnifier">
-                                                <a href="single.html" title="">
-                                                <span class="buttons">
-                                                    <i class="fa fa-link"></i>
-                                                </span><!-- end buttons -->
-                                                </a>
-                                            </div><!-- end magnifier -->
-                                        </div>
-                                        <h3><a href="single.html" title="">Our Building Ideas Is Focused On 2025 </a></h3>
-                                        <p>We aim to eliminate the task of dividing your project between different architecture and construction company.</p>
-                                    </div><!-- end blog-item -->
-                                    <div class="blog-item">
-                                        <div class="entry">
-                                            <a href="single.html"><img src="demos/blog_02.png" alt=""></a>
-                                            <div class="magnifier">
-                                                <a href="single.html" title="">
-                                                <span class="buttons">
-                                                    <i class="fa fa-link"></i>
-                                                </span><!-- end buttons -->
-                                                </a>
-                                            </div><!-- end magnifier -->
-                                        </div>
-                                        <h3><a href="single.html" title="">Next Generation Home Building</a></h3>
-                                        <p>We aim to eliminate the task of dividing your project between different architecture and construction company.</p>
-                                    </div><!-- end blog-item -->
-                                </div><!-- end blog -->
-                            </div><!-- end carousel-widget -->
-                        </div><!-- end widget -->
-                    </div><!-- end col-lg-4 -->        
+       
                 </div><!-- end row -->
             </div><!-- end container -->
         </footer><!-- end footer -->

@@ -8,12 +8,23 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>MRC Group of Buliders</title>
-
+    <title>Welcome to MRC & SONS GROUP in Chennai</title>
+     <!-- favicon icon & apple touch icons -->
+    <link rel="shortcut icon" href="demos/icons/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="demos/icons/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="demos/icons/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="demos/icons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="demos/icons/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="demos/icons/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="demos/icons/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="demos/icons/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="demos/icons/apple-touch-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="demos/icons/apple-touch-icon-180x180.png" />
     <!-- Bootstrap Core CSS -->
-    <link rel=icon href=favicon.png sizes="16x16" type="image/png">
+    
     
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/owl-carousel.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
@@ -47,21 +58,35 @@
                     </div>
 
                     <div class="col-md-3 col-sm-3 col-xs-12">
-                        <p><i class="fa fa-clock-o"></i> Monday - Sunday 9.00 - 18.00</p>
+                       <p><i class="fa fa-clock-o"></i> Monday - Satday</p>
                     </div>
 
                     <div class="col-md-3 col-sm-3 col-xs-12">
-                        <p><i class="fa fa-envelope-o"></i> yousite@yourdomain.com</p>       
+                        <p><i class="fa fa-envelope-o"></i>info@mrcsonsgroup.com</p>       
                     </div>
 
                     <div class="col-md-2 pull-right">
                         <form class="search-form">
                             <div class="form-group has-feedback">
                                 <label for="search" class="sr-only">Search</label>
-                                <input type="text" class="form-control" name="search" id="search" placeholder="Search...">
+                                <input type="text" class="form-control" name="search" id="autocomplete" placeholder="Search...">
                              
                                 <span class="fa fa-search form-control-feedback"></span>
                             </div>
+                            <script>
+                            $( "input#autocomplete" ).autocomplete({
+                                source: [
+                                            { value: "Home", url: 'http://mrcsonsgroup.com/index.html' }, 
+                                            { value: "About", url: 'http://mrcsonsgroup.com/about.html' },
+                                            { value: "Services", url: 'http://mrcsonsgroup.com/services.html' },
+                                            { value: "Projects", url: 'http://mrcsonsgroup.com/projects.html' },
+                                            { value: "Contact", url: 'http://mrcsonsgroup.com/contant.html' }
+                                        ],
+                                       select: function (event, ui) {
+                                           window.location = ui.item.url;
+                                       }
+                               });
+                            </script>
                         </form>
                     </div>
                 </div><!-- end row -->
@@ -85,32 +110,23 @@
                            
                             <li class="active"><a href="index.html">Home</a></li>
                             <li><a href="about.html">About</a></li>
-                            <li class="dropdown">
+                           <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Services <span class="caret"></span></a>
                                 <ul class="dropdown-menu" role="menu">
                                     <li><a href="services.html">All Services</a></li>
-                                    <li><a href="service-tab.html">Preconstruction Services</a></li>
-                                    <li><a href="service-tab.html">Construction Services</a></li>
-                                    <li><a href="service-tab.html">Building Maintenance</a></li>
-                                    <li><a href="service-tab.html">Floor Rework Services</a></li>
-                                    <li><a href="service-tab.html">Interior Design</a></li>
-                                    <li><a href="service-tab.html">OutSide Glass Flooring</a></li>
-                                    <li><a href="service-tab.html">Road Services</a></li>
-                                    <li><a href="service-tab.html">PipeLine Construction</a></li>
-                                    <li><a href="service-tab.html">Painting Works</a></li>
+                                    <li><a href="service-preconstruction.html">Preconstruction Services</a></li>
+                                    <li><a href="service-foundation.html">Foundation Services</a></li>
+                                    <li><a href="service-structure.html">Structure Services</a></li>
+                                    <li><a href="service-floor_rework.html">Floor Rework Services</a></li>
+                                    <li><a href="service-interior_design.html">Interior Design</a></li>
+                                    <li><a href="service-doors_windows.html">Doors & Windows Services</a></li>
+                                    <li><a href="service-painting.html">Painting Works</a></li>
+                                    <li><a href="service-tiles.html">Tiles Works</a></li>
                                 </ul>
                             </li>
                             <li><a href="projects.html">Projects</a></li>
-                            <li><a href="blog.html">Blog</a></li>
-                           
                             <li><a href="contant.html">Contact</a></li>
-                            <li class="social-icons">
-                                <ul>
-                                    <li><a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="http://www.instagram.com/" target="_blank" title="Instagram"><i class="fa fa-instagram"></i></a></li>
-                                   
-                                </ul>
-                            </li>
+                           
                           </ul>
                     </div><!--/.nav-collapse -->
                 </nav>
@@ -276,7 +292,7 @@
                             <div class="entry">
                             <img src="demos/service_01.png" alt="" class="img-responsive">
                                 <div class="magnifier">
-                                    <a href="services.html" title="">
+                                    <a href="service-preconstruction.html" title="">
                                     <span class="buttons">
                                         <i class="fa fa-arrow-right"></i>
                                     </span>
@@ -284,7 +300,7 @@
                                 </div>
                             </div>
                             <h3>Preconstruction Services</h3>
-                            <p>We don’t work from the same office. We have hobbies outside of tech. We don’t go to conferences. We don’t have meetings. We’re guided by passion and love for clean, elegant and minimal design. </p>
+                            <p>Preconstruction are made with RCC pillars upto parapet wall. </p>
                         </div><!-- end sercive-box -->
                     </div><!-- end col -->
                     <div class="col-md-4 col-sm-6">
@@ -292,15 +308,15 @@
                             <div class="entry">
                             <img src="demos/service_02.png" alt="" class="img-responsive">
                                 <div class="magnifier">
-                                    <a href="services.html" title="">
+                                    <a href="service-Foundation.html" title="">
                                     <span class="buttons">
                                         <i class="fa fa-arrow-right"></i>
                                     </span>
                                     </a>
                                 </div>
                             </div>
-                            <h3>Construction Services</h3>
-                            <p>We don’t work from the same office. We have hobbies outside of tech. We don’t go to conferences. We don’t have meetings. We’re guided by passion and love for clean, elegant and minimal design. </p>
+                            <h3>Foundation Services</h3>
+                            <p>Foundation are made with RCC pillars upto parapet wall level and beam upto basement belt level chamber bricks. </p>
                         </div><!-- end sercive-box -->
                     </div><!-- end col -->
                     <div class="col-md-4 col-sm-6">
@@ -308,15 +324,15 @@
                             <div class="entry">
                             <img src="demos/service_03.png" alt="" class="img-responsive">
                                 <div class="magnifier">
-                                    <a href="services.html" title="">
+                                    <a href="service-structure.html" title="">
                                     <span class="buttons">
                                         <i class="fa fa-arrow-right"></i>
                                     </span>
                                     </a>
                                 </div>
                             </div>
-                            <h3>Building Maintenance</h3>
-                            <p>We don’t work from the same office. We have hobbies outside of tech. We don’t go to conferences. We don’t have meetings. We’re guided by passion and love for clean, elegant and minimal design. </p>
+                           <h3>Structure Services</h3>
+                            <p>Structure are made First quality chamber bricks with RCC pillars Upto basement. </p>
                         </div><!-- end sercive-box -->
                     </div><!-- end col -->
                 </div><!-- end row -->
@@ -345,7 +361,7 @@
                             <li><a href="#" data-filter=".cat2">interior design</a></li>
                             <li><a href="#" data-filter=".cat3">Architecture</a></li>
                             <li><a href="#" data-filter=".cat4">paitning</a></li>
-                            <li><a href="#" data-filter=".cat5">Appartment</a></li>
+                            <li><a href="#" data-filter=".cat5">Finishing</a></li>
                         </ul>
                     </nav>
                 </div><!-- end section-title -->
@@ -355,9 +371,9 @@
                     <div class="masonry_wrapper row">
                         <div class="item item-h2 cat2">
                             <div class="entry">
-                                <a href="portfolio-single.html"><img src="demos/portfolio_01.jpg" alt=""></a>
+                                <a href="#"><img src="demos/portfolio_01.jpg" alt=""></a>
                                 <div class="magnifier">
-                                    <a href="portfolio-single.html" title="">
+                                    <a href="#" title="">
                                     <span class="buttons">
                                         <i class="fa fa-link"></i>
                                     </span><!-- end buttons -->
@@ -365,9 +381,9 @@
                                 </div><!-- end magnifier -->
                             </div>
                             <div class="desc">
-                            <h3>Kichen water work</h3>
+                            <h3>Wood Door work</h3>
                             <p>Ongoing, Interior Design</p>
-                                <a href="portfolio-single.html">
+                                <a href="#">
                                 <span class="butto">
                                     <i class="fa fa-picture-o"></i>
                                 </span><!-- end buttons -->
@@ -375,11 +391,11 @@
                             </div>
                         </div><!-- end item -->
                 
-                        <div class="item item-h2 cat2 cat3">
+                        <div class="item item-h2 cat2">
                             <div class="entry">
-                                <a href="portfolio-single.html"><img src="demos/portfolio_02.jpg" alt=""></a>
+                                <a href="#"><img src="demos/portfolio_02.jpg" alt=""></a>
                                 <div class="magnifier">
-                                    <a href="portfolio-single.html" title="">
+                                    <a href="#" title="">
                                     <span class="buttons">
                                         <i class="fa fa-link"></i>
                                     </span><!-- end buttons -->
@@ -387,11 +403,32 @@
                                 </div><!-- end magnifier -->
                             </div>
                             <div class="desc">
-                            <h3>Kichen water work</h3>
+                            <h3>Marble & Tiles work</h3>
                             <p>Ongoing, Interior Design</p>
-                                <a href="portfolio-single.html">
+                                <a href="#">
                                 <span class="butto">
                                     <i class="fa fa-picture-o"></i>
+                                </span><!-- end buttons -->
+                                </a>
+                            </div>
+                        </div><!-- end item -->
+                        <div class="item item-h2 cat3 cat5">
+                            <div class="entry">
+                                <a href="#"><img src="demos/portfolio_11.jpg" alt=""></a>
+                                <div class="magnifier">
+                                    <a href="#" title="">
+                                    <span class="buttons">
+                                        <i class="fa fa-play"></i>
+                                    </span><!-- end buttons -->
+                                    </a>
+                                </div><!-- end magnifier -->
+                            </div>
+                            <div class="desc">
+                            <h3>Final Work</h3>
+                            <p>Finial,Finishing</p>
+                                <a href="#">
+                                <span class="butto">
+                                    <i class="fa fa-play"></i>
                                 </span><!-- end buttons -->
                                 </a>
                             </div>
@@ -399,9 +436,9 @@
 
                         <div class="item item-h2 cat4">
                             <div class="entry">
-                                <a href="portfolio-single.html"><img src="demos/portfolio_03.jpg" alt=""></a>
+                                <a href="#"><img src="demos/portfolio_03.jpg" alt=""></a>
                                 <div class="magnifier">
-                                    <a href="portfolio-single.html" title="">
+                                    <a href="#" title="">
                                     <span class="buttons">
                                         <i class="fa fa-link"></i>
                                     </span><!-- end buttons -->
@@ -409,9 +446,30 @@
                                 </div><!-- end magnifier -->
                             </div>
                             <div class="desc">
-                            <h3>Kichen water work</h3>
-                            <p>Ongoing, Interior Design</p>
-                                <a href="portfolio-single.html">
+                            <h3>Painting</h3>
+                            <p>Ongoing, Painting</p>
+                                <a href="#">
+                                <span class="butto">
+                                    <i class="fa fa-picture-o"></i>
+                                </span><!-- end buttons -->
+                                </a>
+                            </div>
+                        </div><!-- end item -->
+                        <div class="item item-h2 cat4">
+                            <div class="entry">
+                                <a href="#"><img src="demos/portfolio_10.jpg" alt=""></a>
+                                <div class="magnifier">
+                                    <a href="#" title="">
+                                    <span class="buttons">
+                                        <i class="fa fa-link"></i>
+                                    </span><!-- end buttons -->
+                                    </a>
+                                </div><!-- end magnifier -->
+                            </div>
+                            <div class="desc">
+                            <h3>Painting</h3>
+                            <p>Ongoing, Painting</p>
+                                <a href="#">
                                 <span class="butto">
                                     <i class="fa fa-picture-o"></i>
                                 </span><!-- end buttons -->
@@ -419,23 +477,23 @@
                             </div>
                         </div><!-- end item -->
                         
-                        <div class="item item-h2 cat5">
+                        <div class="item item-h2 cat2">
                             <div class="entry">
-                                <a href="portfolio-single.html"><img src="demos/portfolio_04.jpg" alt=""></a>
+                                <a href="#"><img src="demos/portfolio_04.jpg" alt=""></a>
                                 <div class="magnifier">
-                                    <a href="portfolio-single.html" title="">
+                                    <a href="#" title="">
                                     <span class="buttons">
-                                        <i class="fa fa-play"></i>
+                                        <i class="fa fa-link"></i>
                                     </span><!-- end buttons -->
                                     </a>
                                 </div><!-- end magnifier -->
                             </div>
                             <div class="desc">
-                            <h3>Kichen water work</h3>
+                            <h3>Water Flooring work</h3>
                             <p>Ongoing, Interior Design</p>
-                                <a href="portfolio-single.html">
+                                <a href="#">
                                 <span class="butto">
-                                    <i class="fa fa-play"></i>
+                                    <i class="fa fa-picture-o"></i>
                                 </span><!-- end buttons -->
                                 </a>
                             </div>
@@ -443,9 +501,9 @@
     
                         <div class="item item-h2 cat2">
                             <div class="entry">
-                                <a href="portfolio-single.html"><img src="demos/portfolio_05.jpg" alt=""></a>
+                                <a href="#"><img src="demos/portfolio_05.jpg" alt=""></a>
                                 <div class="magnifier">
-                                    <a href="portfolio-single.html" title="">
+                                    <a href="#" title="">
                                     <span class="buttons">
                                         <i class="fa fa-link"></i>
                                     </span><!-- end buttons -->
@@ -453,9 +511,9 @@
                                 </div><!-- end magnifier -->
                             </div>
                             <div class="desc">
-                            <h3>Kichen water work</h3>
+                            <h3>Reading Table</h3>
                             <p>Ongoing, Interior Design</p>
-                                <a href="portfolio-single.html">
+                                <a href="#">
                                 <span class="butto">
                                     <i class="fa fa-picture-o"></i>
                                 </span><!-- end buttons -->
@@ -463,77 +521,67 @@
                             </div>
                         </div><!-- end item -->
                         
-                        <div class="item item-h2 cat3 cat5">
+                        <div class="item item-h2 cat2">
                             <div class="entry">
-                                <a href="portfolio-single.html"><img src="demos/portfolio_06.jpg" alt=""></a>
+                                <a href="#"><img src="demos/portfolio_06.jpg" alt=""></a>
                                 <div class="magnifier">
-                                    <a href="portfolio-single.html" title="">
+                                    <a href="#" title="">
                                     <span class="buttons">
-                                        <i class="fa fa-play"></i>
+                                        <i class="fa fa-link"></i>
                                     </span><!-- end buttons -->
                                     </a>
                                 </div><!-- end magnifier -->
                             </div>
                             <div class="desc">
-                            <h3>Kichen water work</h3>
+                            <h3>Tv Cabinet Work</h3>
                             <p>Ongoing, Interior Design</p>
-                                <a href="portfolio-single.html">
+                                <a href="#">
                                 <span class="butto">
-                                    <i class="fa fa-play"></i>
+                                    <i class="fa fa-picture-o"></i>
                                 </span><!-- end buttons -->
                                 </a>
                             </div>
                         </div><!-- end item -->
 
-
-
-
-
-
-
-                        <div class="item item-h2 cat3 cat5">
+                        <div class="item item-h2 cat2">
                             <div class="entry">
-                                <a href="portfolio-single.html"><img src="demos/portfolio_07.jpg" alt=""></a>
+                                <a href="#"><img src="demos/portfolio_07.jpg" alt=""></a>
                                 <div class="magnifier">
-                                    <a href="portfolio-single.html" title="">
+                                    <a href="#" title="">
                                     <span class="buttons">
-                                        <i class="fa fa-play"></i>
+                                        <i class="fa fa-link"></i>
                                     </span><!-- end buttons -->
                                     </a>
                                 </div><!-- end magnifier -->
                             </div>
                             <div class="desc">
-                            <h3>Kichen water work</h3>
+                            <h3>Floor steps work</h3>
                             <p>Ongoing, Interior Design</p>
-                                <a href="portfolio-single.html">
+                                <a href="#">
                                 <span class="butto">
-                                    <i class="fa fa-play"></i>
+                                    <i class="fa fa-picture-o"></i>
                                 </span><!-- end buttons -->
                                 </a>
                             </div>
                         </div><!-- end item -->
 
-
-
-
-
-                        <div class="item item-h2 cat3 cat5">
+                        <div class="item item-h2 cat3">
                             <div class="entry">
-                                <a href="portfolio-single.html"><img src="demos/portfolio_08.jpg" alt=""></a>
+                                <a href="#"><img src="demos/portfolio_08.jpg" alt=""></a>
                                 <div class="magnifier">
-                                    <a href="portfolio-single.html" title="">
+                                    <a href="#" title="">
                                     <span class="buttons">
-                                        <i class="fa fa-play"></i>
+                                        <i class="fa fa-link"></i>
                                     </span><!-- end buttons -->
                                     </a>
                                 </div><!-- end magnifier -->
                             </div>
                             <div class="desc">
-                            <h3>Kichen water work</h3>
-                            <p>Ongoing, Interior Design</p>
-                                <a href="portfolio-single.html">
+                            <h3>Roof work</h3>
+                            <p>Finishing, Architecture</p>
+                                <a href="#">
                                 <span class="butto">
-                                    <i class="fa fa-play"></i>
+                                    <i class="fa fa-picture-o"></i>
                                 </span><!-- end buttons -->
                                 </a>
                             </div>
@@ -543,9 +591,9 @@
 
                         <div class="item item-h2 cat3 cat5">
                             <div class="entry">
-                                <a href="portfolio-single.html"><img src="demos/portfolio_09.jpg" alt=""></a>
+                                <a href="#"><img src="demos/portfolio_09.jpg" alt=""></a>
                                 <div class="magnifier">
-                                    <a href="portfolio-single.html" title="">
+                                    <a href="#" title="">
                                     <span class="buttons">
                                         <i class="fa fa-play"></i>
                                     </span><!-- end buttons -->
@@ -553,9 +601,9 @@
                                 </div><!-- end magnifier -->
                             </div>
                             <div class="desc">
-                            <h3>Kichen water work</h3>
-                            <p>Ongoing, Interior Design</p>
-                                <a href="portfolio-single.html">
+                            <h3>Final Work</h3>
+                            <p>Final, Finishing</p>
+                                <a href="#">
                                 <span class="butto">
                                     <i class="fa fa-play"></i>
                                 </span><!-- end buttons -->
@@ -629,24 +677,16 @@
                                 <br>
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <h4>620 Memorial Drive in Cambridge was renovated from core structure for Hybridon, Inc., now Pfizer occupies the building. Interesting fact: During early construction, the basement was flooded to the extent that the only access to the water shut off valves in the basement was by boat.</h4>
+                                        <h4>We are engaged in providing a wide range of construction project Building Contractor Industrial services to our prestigious clients. </h4>
                                     </div>
 
-                                    <div class="col-md-6 col-sm-6">
-                                        <p>Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc.</p>
+                                    <div class="col-md-12">
+                                        <p>Our wide range of services includes commercial building service and civil construction works. Performed with precision by our personnel using the advanced tools, The accuracy and dependability of our. We are highly admired by customers due to presenting House Construction Service. We have a team of sharply skilled professionals in our firm to meet exact requirements of clients. Besides this, professionals use the optimal quality raw material for constructional work.</p>
 
-                                        <p>Oroin condimentum fermentum nunc. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. </p>
-
-                                        <p>Proin condimentum fermentum nunc. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit tincidunt auctor a ornare odio.</p>
+                                        
                                     </div>
 
-                                    <div class="col-md-6 col-sm-6">
-                                        <p>Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc.</p>
-
-                                        <p>Oroin condimentum fermentum nunc. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. </p>
-
-                                        <p>Proin condimentum fermentum nunc. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit tincidunt auctor a ornare odio.</p>
-                                    </div>
+                                   
                                 </div><!-- end row -->
                             </div>
                             <div role="tabpanel" class="tab-pane fade color-green" id="profile">
@@ -667,24 +707,14 @@
                                 <br>
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <h4>620 Memorial Drive in Cambridge was renovated from core structure for Hybridon, Inc., now Pfizer occupies the building. Interesting fact: During early construction, the basement was flooded to the extent that the only access to the water shut off valves in the basement was by boat.</h4>
+                                        <h4>There are a number of benefits associated with choosing mrc sons group of construction for your new construction .The process gives you a single point of responsibility. No more conversations with architects contractors or construction. </h4>
                                     </div>
 
-                                    <div class="col-md-6 col-sm-6">
-                                        <p>Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc.</p>
-
-                                        <p>Oroin condimentum fermentum nunc. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. </p>
-
-                                        <p>Proin condimentum fermentum nunc. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit tincidunt auctor a ornare odio.</p>
+                                    <div class="col-md-12 col-sm-6">
+                                        <p>Our architectural Inc., creates architecture with an uncompromising dedication to quality and a commitment to service excellence. We specialize in residential design, affordable housing design, aging in place design, commercial design, institutional design, renovation/tenant improvements, sustainable design and provide experienced project and construction management, master planning/land planning</p>
                                     </div>
 
-                                    <div class="col-md-6 col-sm-6">
-                                        <p>Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc.</p>
-
-                                        <p>Oroin condimentum fermentum nunc. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. </p>
-
-                                        <p>Proin condimentum fermentum nunc. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit tincidunt auctor a ornare odio.</p>
-                                    </div>
+                                   
                                 </div><!-- end row -->
                             </div>
                             <div role="tabpanel" class="tab-pane fad color-purple" id="messages">
@@ -705,24 +735,16 @@
                                 <br>
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <h4>620 Memorial Drive in Cambridge was renovated from core structure for Hybridon, Inc., now Pfizer occupies the building. Interesting fact: During early construction, the basement was flooded to the extent that the only access to the water shut off valves in the basement was by boat.</h4>
+                                        <h4>We undertake the designing of the interiors of the offices, institutes and other commercial areas by offering Interior Designing Services. </h4>
                                     </div>
 
-                                    <div class="col-md-6 col-sm-6">
-                                        <p>Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc.</p>
+                                    <div class="col-md-12 col-sm-6">
+                                        <p>These wood work are designed & done by us as per the requirements specified by our clients. With the helps of our designers, we suggest our clients what suits the best to their interior requirements depending on the availability of the space.</p>
 
-                                        <p>Oroin condimentum fermentum nunc. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. </p>
-
-                                        <p>Proin condimentum fermentum nunc. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit tincidunt auctor a ornare odio.</p>
+                                        
                                     </div>
 
-                                    <div class="col-md-6 col-sm-6">
-                                        <p>Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc.</p>
-
-                                        <p>Oroin condimentum fermentum nunc. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. </p>
-
-                                        <p>Proin condimentum fermentum nunc. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit tincidunt auctor a ornare odio.</p>
-                                    </div>
+                                    
                                 </div><!-- end row -->
                             </div>
                             <div role="tabpanel" class="tab-pane fade color-yellow" id="settings">
@@ -743,24 +765,14 @@
                                 <br>
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <h4>620 Memorial Drive in Cambridge was renovated from core structure for Hybridon, Inc., now Pfizer occupies the building. Interesting fact: During early construction, the basement was flooded to the extent that the only access to the water shut off valves in the basement was by boat.</h4>
+                                        <h4>We are professional painting service provider. We can paint your house / office & commercials smooth and even. Our expert team will make proper suggestions to choose from wide range of paint colors and types. Also we can buy the paint for you if you want.</h4>
                                     </div>
 
-                                    <div class="col-md-6 col-sm-6">
-                                        <p>Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc.</p>
-
-                                        <p>Oroin condimentum fermentum nunc. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. </p>
-
-                                        <p>Proin condimentum fermentum nunc. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit tincidunt auctor a ornare odio.</p>
+                                     <div class="col-md-12 col-sm-6">
+                                        <p>Only an experienced will know how to repaint a used house, remove the stains and dirt with special sealer. Cleaning your wall with water jet etc, solving the fungus and algae problem, seals hairline cracks and pores, preventing water penetration. We give more importance to professionalism, quality, cleanliness. We give 100% guranteed workmanship.</p>
                                     </div>
 
-                                    <div class="col-md-6 col-sm-6">
-                                        <p>Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc.</p>
-
-                                        <p>Oroin condimentum fermentum nunc. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. </p>
-
-                                        <p>Proin condimentum fermentum nunc. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit tincidunt auctor a ornare odio.</p>
-                                    </div>
+                                    
                                 </div><!-- end row -->
                             </div>
                         </div>
@@ -769,154 +781,106 @@
             </div><!-- end container -->
         </section><!-- end section -->
 
-        <section class="section-w clearfix">
-            <div class="container">
-                <div class="section-title">
-                    <h3>Clients & Partners</h3>
-                    <span class="divider"></span>
-                    <p> We offer quality tiling and painting solutions for interior and exterior.</p>
-                </div><!-- end section-title -->
-                
-                <div class="row section-wrapper clearfix">
-                    <div class="col-md-6 col-sm-6">
-                        <div id="testimonial-slider">
-                            <div class="testimonial">
-                                <div class="text-block">
-                                 <p>Builder construction managment professionals organize, lead and manage the people, materials and processes of construction utilizing the latest technologies within the industry. </p>
-                                 <div class="rating">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                 </div><!-- end rating -->
-                                 <img src="demos/testi_01.png" class="img-responsive img-circle" alt="">
-                                 </div>
-
-                                <div class="title-block">
-                                    <h3>Kevin Perry</h3>
-                                    <p>Hotel Brooklyn - MD</p>
-                                </div>
-                            </div>
-                            <div class="testimonial">
-                                <div class="text-block">
-                                 <p>Builder construction managment professionals organize, lead and manage the people, materials and processes of construction utilizing the latest technologies within the industry. </p>
-                                 <div class="rating">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                 </div><!-- end rating -->
-                                 <img src="demos/testi_01.png" class="img-responsive img-circle" alt="">
-                                 </div>
-
-                                <div class="title-block">
-                                    <h3>Kevin Perry</h3>
-                                    <p>Hotel Brooklyn - MD</p>
-                                </div>
-                            </div>
-                            <div class="testimonial">
-                                <div class="text-block">
-                                 <p>Builder construction managment professionals organize, lead and manage the people, materials and processes of construction utilizing the latest technologies within the industry. </p>
-                                 <div class="rating">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                 </div><!-- end rating -->
-                                 <img src="demos/testi_01.png" class="img-responsive img-circle" alt="">
-                                 </div>
-
-                                <div class="title-block">
-                                    <h3>Kevin Perry</h3>
-                                    <p>Hotel Brooklyn - MD</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- end col -->
-
-                    <div class="col-md-6 col-sm-6">
-                        <div class="row all-clients">
-                            <div class="col-md-6 col-sm-6 first">
-                                <div class="client">
-                                <figure class="effect-milo">
-                                    <img src="demos/client_02.png" alt="" class="img-responsive">
-                                    <figcaption> 
-                                    <img src="demos/client_02_back.png" alt="" class="image img-responsive">
-                                    </figcaption>   
-                                 </figure>
-                                </div><!-- end client -->
-                            </div><!-- end col -->
-                            <div class="col-md-6 col-sm-6 last">
-                                <div class="client">
-                                <figure class="effect-milo">
-                                    <img src="demos/client_03.png" alt="" class="img-responsive">
-                                    <figcaption> 
-                                    <img src="demos/client_03_back.png" alt="" class="image img-responsive">
-                                    </figcaption>   
-                                 </figure>
-                                </div><!-- end client -->
-                            </div><!-- end col -->
-                            <div class="col-md-6 col-sm-6 first">
-                                <div class="client">
-                                <figure class="effect-milo">
-                                    <img src="demos/client_04.png" alt="" class="img-responsive">
-                                    <figcaption> 
-                                    <img src="demos/client_04_back.png" alt="" class="image img-responsive">
-                                    </figcaption>   
-                                 </figure>
-                                </div><!-- end client -->
-                            </div><!-- end col -->
-                            <div class="col-md-6 col-sm-6 last">
-                                <div class="client">
-                                <figure class="effect-milo">
-                                    <img src="demos/client_05.png" alt="" class="img-responsive">
-                                    <figcaption> 
-                                    <img src="demos/client_05_back.png" alt="" class="image img-responsive">
-                                    </figcaption>   
-                                 </figure>
-                                </div><!-- end client -->
-                            </div><!-- end col -->
-                            <div class="col-md-6 col-sm-6 first">
-                                <div class="client">
-                                <figure class="effect-milo">
-                                    <img src="demos/client_06.png" alt="" class="img-responsive">
-                                    <figcaption> 
-                                    <img src="demos/client_06_back.png" alt="" class="image img-responsive">
-                                    </figcaption>   
-                                 </figure>
-                                </div><!-- end client -->
-                            </div><!-- end col -->
-                            <div class="col-md-6 col-sm-6 last">
-                                <div class="client">
-                                <figure class="effect-milo">
-                                    <img src="demos/client_01.png" alt="" class="img-responsive">
-                                    <figcaption> 
-                                    <img src="demos/client_01_back.png" alt="" class="image img-responsive">
-                                    </figcaption>   
-                                 </figure>
-                                </div><!-- end client -->
-                            </div><!-- end col -->
-                        </div><!-- end row -->
-                    </div><!-- end col -->
-                </div><!-- end row -->
-            </div><!-- end container -->
-        </section><!-- end section -->
-
+      
         <div class="landing-message colorful">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h3 class="pull-left">We promise our customer to give life long support for our “ MRC Group ”</h3>
+                        <h3 class="pull-left">We promise our customer to give life long support for our “ MRC & SONS GROUPS OF CONSTRUCTION  ”</h3>
                         <a href="#" class="btn btn-default btn-lg pull-right">Get a Quote</a>
                     </div>
                 </div><!-- end row -->
             </div><!-- end container -->
         </div><!-- end landing -->
 
-      <?html include 'footer.html'; ?>
+      <footer class="footer clearfix">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-lg-6 col-md-6 col-xs-12">
+                              <div class="widget">
+                                  <div class="widget-title">
+                                      <h3><span class="divider"></span> About Us</h3>
+                                  </div><!-- end widget title -->
+                                  <div class="about-widget">
+                                      <a href="about.html"><img src="images/logo.png" alt=""></a>
+                                      
+                                      <p>Family-owned and operated since 2014, MRC & SONS GROUPS has gone through an evolution to become Construction company it is today. Two brothers founded the company after years of working with their father. <a href="about.html">ReadMore.</a></p>
+                                      <ul>
+                                         
+                                      </ul>
+                                  </div><!-- end about-widget -->
+                              </div><!-- end widget -->
+                          </div><!-- end col-lg-4 -->
+
+                          <div class="col-lg-6 col-md-6 col-xs-12">
+                              <div class="widget">
+                                  <div class="widget-title">
+                                      <h3><span class="divider"></span> What We Do?</h3>
+                                  </div><!-- end widget title -->
+                                  <div class="accordion-widget">
+
+                                      <div id="accordion-first" class="clearfix">
+                                          <div class="accordion" id="accordion1">
+                                              <div class="accordion-group">
+                                                  <div class="accordion-heading">
+                                                      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne1">
+                                                          <em class="fa fa-arrow-right icon-fixed-width"></em>Construction Services
+                                                      </a>
+                                                  </div>
+                                                  <div id="collapseOne1" class="accordion-body collapse in">
+                                                      <div class="accordion-inner">
+                                                          <p>We take pride in our work. Designing big projects is our focus for 2050. Together we bring life to your building, home ideas and your wishes. </p>
+                                                      </div>
+                                                  </div>
+                                              </div>
+
+                                              <div class="accordion-group clearfix">
+                                                  <div class="accordion-heading">
+                                                      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne2">
+                                                          <em class="fa fa-arrow-down icon-fixed-width"></em>Preconstruction Services
+                                                      </a>
+                                                  </div>
+                                                  <div id="collapseOne2" class="accordion-body collapse">
+                                                      <div class="accordion-inner">
+                                                          <p>Phasellus scelerisque est non eros commodo auctor a fringilla elit. Maecenas mattis<br> venenatis euismod. Nunc eget cursus lacus, in vehicula nibh. Suspendisse auctor orci vitae<br> tellus viverra..</p>
+                                                      </div>
+                                                  </div>
+                                              </div>
+
+                                              <div class="accordion-group clearfix">
+                                                  <div class="accordion-heading">
+                                                      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne3">
+                                                          <em class="fa fa-arrow-down icon-fixed-width"></em>Building Maintenance
+                                                      </a>
+                                                  </div>
+                                                  <div id="collapseOne3" class="accordion-body collapse">
+                                                      <div class="accordion-inner">
+                                                          <p>Phasellus scelerisque est non eros commodo auctor a fringilla elit. Maecenas mattis<br> venenatis euismod. Nunc eget cursus lacus, in vehicula nibh. Suspendisse auctor orci vitae<br> tellus viverra..</p>
+                                                      </div>
+                                                  </div>
+                                              </div>
+
+                                              <div class="accordion-group clearfix">
+                                                  <div class="accordion-heading">
+                                                      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne4">
+                                                          <em class="fa fa-arrow-down icon-fixed-width"></em>Free Customer Support
+                                                      </a>
+                                                  </div>
+                                                  <div id="collapseOne4" class="accordion-body collapse">
+                                                      <div class="accordion-inner">
+                                                          <p>Phasellus scelerisque est non eros commodo auctor a fringilla elit. Maecenas mattis<br> venenatis euismod. Nunc eget cursus lacus, in vehicula nibh. Suspendisse auctor orci vitae<br> tellus viverra..</p>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div><!-- end accordion -->
+                                      </div><!-- end accordion first -->
+                                  </div><!-- end accordion-widget -->
+                              </div><!-- end widget -->
+                          </div><!-- end col-lg-4 -->
+             
+                      </div><!-- end row -->
+                  </div><!-- end container -->
+              </footer><!-- end footer -->
 
         <section class="copyrights text-center">
             <div class="container">
